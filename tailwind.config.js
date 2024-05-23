@@ -9,6 +9,9 @@ module.exports = {
       xl: "1440px",
     },
     extend: {},
+    fontFamily: {
+      poppins: ["Poppins", "sans-serif"],
+    },
   },
   plugins: [],
 };
