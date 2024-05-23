@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/assets/css/main.css" />
     <link rel="stylesheet" href="/assets/css/style.css" />
-    <title>Restaurant dashboard</title>
+    <title>Menu Builder</title>
   </head>
   <body style="background-color: #ebedf3">
     <!-- hero section -->
@@ -69,7 +69,10 @@
           <ul class="w-full">
             <!-- dashboard -->
             <li class="text-sm font-bold border-b-2">
-              <a href="#" class="flex items-center py-2 px-4 hover:text-black">
+              <a
+                href="Restaurant_dashboard.html"
+                class="flex items-center py-2 px-4 hover:text-black"
+              >
                 <svg
                   class="text-red-700 w-7 h-7 mr-4"
                   xmlns="http://www.w3.org/2000/svg"
@@ -101,7 +104,7 @@
             </li>
             <!-- ------ -->
             <li class="text-sm font-bold border-b-2 hover:text-red-700">
-              <a href="#" class="flex items-center py-2 px-4">
+              <a href="menu-builder.html" class="flex items-center py-2 px-4">
                 <svg
                   class="w-6 h-6 mr-4"
                   xmlns="http://www.w3.org/2000/svg"
@@ -204,147 +207,21 @@
       </div>
       <!-- Recent order section -->
       <main
-        class="w-[80%] mt-16 mr-32 border-t-4 h-96"
+        class="w-[80%] mt-16 mr-32 border-t-4 h-96 px-10"
         style="background-color: #fff"
       >
-        <div
-          class="flex gap-10 items-center justify-between border w-full h-16"
-        >
-          <div class="recent_order items-center ml-10">
-            <h1 class="font-bold text-lg">RECENT ORDERS</h1>
-          </div>
-          <div class="recent_order mr-10 bg-red-950">
-            <select class="h-8 ml-auto border px-5" name="options" id="options">
-              <option value="option1">Select Orders Status</option>
-              <option value="option1">Processing</option>
-              <option value="option2">Cancelled</option>
-              <option value="option3">Completed</option>
-            </select>
+        <!-- menu builder header -->
+        <div class="flex items-center justify-between border-b w-full h-16">
+          <div class="recent_order items-center">
+            <h1 class="font-bold text-lg">BUILD YOUR FOOD MENU</h1>
           </div>
         </div>
-        <div class="order_items h-auto">
-          <ul class="w-full">
-            <li class="flex items-center h-12 border bg-gray-100 font-bold">
-              <div class="flex-1 flex items-center justify-center p-4">
-                Order Id
-              </div>
-              <div class="flex-1 flex items-center justify-center p-4">
-                Date
-              </div>
-              <div class="flex-1 flex items-center justify-center p-4">
-                Total Price
-              </div>
-              <div class="flex-1 flex items-center justify-center p-4">
-                Charges
-              </div>
-              <div class="flex-1 flex items-center justify-center p-4">
-                Reseved
-              </div>
-              <div class="flex-1 flex items-center justify-center p-4">
-                Status
-              </div>
-            </li>
-            <li class="flex items-center h-14 border text-sm">
-              <div
-                class="flex-1 flex items-center justify-center p-4 text-blue-600"
-              >
-                <a href="#">Order-3344</a>
-              </div>
-              <div class="flex-1 flex items-center justify-center p-4">
-                April 9,22
-              </div>
-              <div class="flex-1 flex items-center justify-center p-4">
-                $ 32.44
-              </div>
-              <div class="flex-1 flex items-center justify-center p-4">
-                $20.21
-              </div>
-              <div class="flex-1 flex items-center justify-center p-4">$20</div>
-              <div class="flex-1 flex items-center justify-center p-4">
-                <button
-                  type="button"
-                  class="border w-24 bg-green-700 p-1 text-sm px-2"
-                >
-                  Completed
-                </button>
-              </div>
-            </li>
-            <li class="flex items-center h-14 border text-sm">
-              <div
-                class="flex-1 flex items-center justify-center p-4 text-blue-600"
-              >
-                <a href="#">Order-3344</a>
-              </div>
-              <div class="flex-1 flex items-center justify-center p-4">
-                April 9,22
-              </div>
-              <div class="flex-1 flex items-center justify-center p-4">
-                $ 32.44
-              </div>
-              <div class="flex-1 flex items-center justify-center p-4">
-                $20.21
-              </div>
-              <div class="flex-1 flex items-center justify-center p-4">$20</div>
-              <div class="flex-1 flex items-center justify-center p-4">
-                <button
-                  type="button"
-                  class="border w-24 bg-blue-500 p-1 text-sm px-2"
-                >
-                  Proccessing
-                </button>
-              </div>
-            </li>
-            <li class="flex items-center h-14 border text-sm">
-              <div
-                class="flex-1 flex items-center justify-center p-4 text-blue-600"
-              >
-                <a href="#">Order-3344</a>
-              </div>
-              <div class="flex-1 flex items-center justify-center p-4">
-                April 9,22
-              </div>
-              <div class="flex-1 flex items-center justify-center p-4">
-                $ 32.44
-              </div>
-              <div class="flex-1 flex items-center justify-center p-4">
-                $20.21
-              </div>
-              <div class="flex-1 flex items-center justify-center p-4">$20</div>
-              <div class="flex-1 flex items-center justify-center p-4">
-                <button
-                  type="button"
-                  class="border w-24 bg-green-700 p-1 text-sm px-2"
-                >
-                  Completed
-                </button>
-              </div>
-            </li>
-            <li class="flex items-center h-14 border text-sm">
-              <div
-                class="flex-1 flex items-center justify-center p-4 text-blue-600"
-              >
-                <a href="#">Order-3344</a>
-              </div>
-              <div class="flex-1 flex items-center justify-center p-4">
-                April 9,22
-              </div>
-              <div class="flex-1 flex items-center justify-center p-4">
-                $ 32.44
-              </div>
-              <div class="flex-1 flex items-center justify-center p-4">
-                $20.21
-              </div>
-              <div class="flex-1 flex items-center justify-center p-4">$20</div>
-              <div class="flex-1 flex items-center justify-center p-4">
-                <button
-                  type="button"
-                  class="border bg-red-500 w-24 p-1 text-sm px-2"
-                >
-                  Canseled
-                </button>
-              </div>
-            </li>
-          </ul>
+        <div class="mt-3 font-bold">
+          <h1>Menu Categories</h1>
+        </div>
+        <div class="flex justify-end gap-x-2 items-center">
+          <div class="px-3 py-1 border w-36 text-center rounded-md bg-green-700 text-white"><button type="button">+ Add Category</button></div>
+          <div class="px-3 py-1 border w-36 text-center rounded-md bg-blue-700 text-white"><button type="button">+ Add Food</button></div>
         </div>
       </main>
     </div>
