@@ -28,3 +28,11 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
+#buyer_dashborad {
+  background-image: url("/assets/images/buyer.jpg");
+  border-radius: 20px;
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
