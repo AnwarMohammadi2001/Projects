@@ -920,6 +920,11 @@ video {
   height: 100px;
 }
 
+.max-h-fit {
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+}
+
 .w-1\/2 {
   width: 50%;
 }
@@ -1244,6 +1249,15 @@ video {
 .bg-gray-400 {
   --tw-bg-opacity: 1;
   background-color: rgb(156 163 175 / var(--tw-bg-opacity));
+}
+
+.bg-\[\] {
+  background-color: ;
+}
+
+.bg-\[\#ebedf3\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(235 237 243 / var(--tw-bg-opacity));
 }
 
 .bg-opacity-50 {
