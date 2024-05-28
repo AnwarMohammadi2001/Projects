@@ -1,6 +1,6 @@
+const openModalButton = document.querySelectorAll(".openModalButton");
 const closeModalButton = document.getElementById("closeModalButton");
 const modal = document.getElementById("modal");
-const openModalButton = document.querySelectorAll(".openModalButton");
 
 // Add an event listener to each button
 openModalButton.forEach(function (button) {
@@ -19,9 +19,7 @@ window.addEventListener("click", (event) => {
   }
 });
 
-// const closeUserHoldr = document.getElementById("closeUserHolder");
-// let user_holder = document.getElementById("user_holder");
-
-// closeUserHoldr.addEventListener("click", () => {
- 
-// });
+// Buyer order Modal
+const openBuyerDetialsModal = document.querySelectorAll(".open_order_details");
+const closeBuerDetailsModal = document.getElementById("close-order-details");
+const buyerModal = document.getElementById("modal_order");

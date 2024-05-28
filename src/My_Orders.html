@@ -137,7 +137,7 @@
             </li>
             <!-- --------MY ORDER------ -->
             <li class="text-sm font-bold border-b-2 hover:text-red-700">
-              <a href="#" class="flex items-center py-2 px-4">
+              <a href="My_Orders.html" class="flex items-center py-2 px-4">
                 <svg
                   class="w-6 h-6 mr-4"
                   xmlns="http://www.w3.org/2000/svg"
@@ -374,15 +374,158 @@
               <div class="mt-2">
                 <p>Apr 9, 2020 06:38 AM</p>
               </div>
+              <!-- order buttons -->
               <div class="flex justify-between items-center mt-3">
-                <button class="border border-red-500 text-red-500 font-bold text-sm px-3 py-1 rounded"><a href="">ORDER DETAILS</a></button>
-                <button class="border  text-white bg-green-600 font-bold text-sm px-3 py-1 rounded"><a href="">Completed</a></button>
+                <button
+                  type="button"
+                  class="open_order_details border border-red-500 text-red-500 font-bold text-sm px-3 py-1 rounded"
+                >
+                  ORDER DETAILS
+                </button>
+                <button
+                  class="border text-white bg-green-600 font-bold text-sm px-3 py-1 rounded"
+                >
+                  <a href="">Completed</a>
+                </button>
               </div>
             </div>
             <div class="border p-5 w-1/2"></div>
           </div>
         </div>
       </main>
+    </div>
+    <!-- Modal Section -->
+    <div
+      id="modal_order"
+      class="fixed inset-0 bg-black bg-opacity-50 w-[100%] hidden"
+    >
+      <div
+        class="fixed top-10 rounded-md overflow-y-scroll left-[25%] right-[25%] h-[100vh] bg-white w-[50%] shadow-xl"
+      >
+        <!-- Modal Header -->
+        <div class="modal-header px-6 py-4 flex justify-between items-center">
+          <div class="flex">
+            <div class="mr-14 text-xl font-bold"><h1>Order Details</h1></div>
+          </div>
+          <div>
+            <button id="close-order-details">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6 18 18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <!--  Modal Body-->
+        <div class="modal-body px-6 flex pt-5 border-t">
+          <div class="w-1/2">
+            <h2 class="font-bold mb-2">Restaurant Demo</h2>
+            <ul>
+              <li>
+                <strong class="mr-3">Order Id :</strong> <span>20222</span>
+              </li>
+              <li>
+                <strong class="mr-3">Delivary Time :</strong> <span>20222</span>
+              </li>
+              <li>
+                <strong class="mr-3">delivary Date :</strong> <span>20222</span>
+              </li>
+              <li><strong class="mr-3">Time :</strong> <span>20222</span></li>
+              <li>
+                <strong class="mr-3">Payment Status:</strong> <span>20222</span>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <div>
+              <h2 class="font-bold mb-2">Restaurant Demo</h2>
+              <ul>
+                <li>
+                  <strong class="mr-3">Order Id :</strong> <span>20222</span>
+                </li>
+                <li>
+                  <strong class="mr-3">Delivary Time :</strong>
+                  <span>20222</span>
+                </li>
+                <li>
+                  <strong class="mr-3">delivary Date :</strong>
+                  <span>20222</span>
+                </li>
+                <li><strong class="mr-3">Time :</strong> <span>20222</span></li>
+                <li>
+                  <strong class="mr-3">Payment Status:</strong>
+                  <span>20222</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal order -->
+        <div class="Modal-order px-6 mt-7 pt-5 border-t">
+          <h1 class="font-bold text-lg mb-2">Food Menu</h1>
+          <div class="mt-3">
+            <ul>
+              <li class="flex justify-between bg-gray-100 px-5 py-2 border-b">
+                <div class="text-lg">Products</div>
+                <div>Price</div>
+              </li>
+              <li class="flex justify-between text-lg px-5 py-3">
+                <div>
+                  <h4 class="text-lg mb-2">Pizza</h4>
+                  <p class="text-sm text-gray-400">kdjkjdjgkdkjdk</p>
+                </div>
+                <div>22$</div>
+              </li>
+              <li class="flex justify-between text-lg px-5 py-3">
+                <div>
+                  <h4 class="text-lg mb-2">Pizza</h4>
+                  <p class="text-sm text-gray-400">kdjkjdjgkdkjdk</p>
+                </div>
+                <div>22$</div>
+              </li>
+              <li class="flex justify-between text-lg px-5 py-3">
+                <div>
+                  <h4 class="text-lg mb-2">Pizza</h4>
+                  <p class="text-sm text-gray-400">kdjkjdjgkdkjdk</p>
+                </div>
+                <div>22$</div>
+              </li>
+              <li class="flex justify-between text-lg px-5 py-3">
+                <div>
+                  <h4 class="text-lg mb-2">Pizza</h4>
+                  <p class="text-sm text-gray-400">kdjkjdjgkdkjdk</p>
+                </div>
+                <div>22$</div>
+              </li>
+              <li class="flex justify-between text-lg px-5 py-3">
+                <div>
+                  <h4 class="text-lg mb-2">Pizza</h4>
+                  <p class="text-sm text-gray-400">kdjkjdjgkdkjdk</p>
+                </div>
+                <div>22$</div>
+              </li>
+              <li class="flex justify-between text-lg px-5 py-3">
+                <div>
+                  <h4 class="text-lg mb-2">Pizza</h4>
+                  <p class="text-sm text-gray-400">kdjkjdjgkdkjdk</p>
+                </div>
+                <div>22$</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- Footer -->
     <footer
