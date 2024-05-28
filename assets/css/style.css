@@ -38,3 +38,22 @@
   background-repeat: no-repeat;
   background-position: center;
 }
+
+/* Buyer review */
+.stars input[type="radio"] {
+  display: none;
+}
+.stars label {
+  cursor: pointer;
+  font-size: 1.8rem;
+  color: #d1d5db; /* Tailwind's gray-300 */
+  transition: color 0.3s;
+}
+
+/* .stars input[type="radio"]:checked ~ label {
+  color: #fbbf24; 
+}
+.stars label:focus,
+.stars label:focus ~ label {
+  color: #fbbf24; 
+} */
