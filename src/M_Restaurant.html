@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/assets/css/main.css" />
     <link rel="stylesheet" href="/assets/css/style.css" />
-    <title>Restaurant dashboard</title>
+    <title>M-restaurant</title>
   </head>
   <body style="background-color: #ebedf3">
     <!-- hero section -->
@@ -62,7 +62,7 @@
     <div class="flex gap-10 mb-40">
       <!-- Aside dashoard--------------  -->
       <div
-        class="w-[25%] shadow-md border-t-4 ml-32 mt-16 h-fit"
+        class="w-[25%] shadow-md border-t-4 ml-32 mt-16 "
         style="background-color: #fff"
       >
         <div class="flex items-center">
@@ -88,7 +88,7 @@
             </li>
             <!-- mu restauarnt -->
             <li class="text-sm font-bold border-b-2 hover:text-red-700">
-              <a href="my_restaurant.html" class="flex items-center py-2 px-4">
+              <a href="M_Restaurant.html" class="flex items-center py-2 px-4">
                 <svg
                   class="w-6 h-6 mr-4"
                   xmlns="http://www.w3.org/2000/svg"
@@ -316,209 +316,67 @@
       </div>
       <!-- Recent order section -->
       <main
-        class="w-[80%] mt-16 mr-32 border-t-4 h-fit"
+        class="w-[80%] mt-16 mr-32 border-t-4 h-fitgit"
         style="background-color: #fff"
       >
-        <div
-          class="flex gap-10 items-center justify-between border w-full h-16"
-        >
-          <div class="recent_order items-center ml-10">
-            <h1 class="font-bold text-lg">RECENT ORDERS</h1>
+        <div class="w-full px-10 h-fit">
+          <div class="flex items-center justify-evenly mt-5 py-5 font-bold">
+            <a href="my_restaurant.html">
+              <button class="py-2 px-3 w-64 bg-red-500 text-white rounded">
+                Restaurant Settings
+              </button></a
+            >
+            <button class="py-2 px-3 bg-red-500 text-white rounded">
+              Location/Map
+            </button>
+            <button class="py-2 px-3 w-64 bg-red-500 text-white rounded">
+              Restaurant Open/Close
+            </button>
           </div>
-          <div class="recent_order mr-10 bg-red-950">
-            <select class="h-8 ml-auto border px-5" name="options" id="options">
-              <option value="option1">Select Orders Status</option>
-              <option value="option1">Processing</option>
-              <option value="option2">Cancelled</option>
-              <option value="option3">Completed</option>
-            </select>
+          <div class="py-5">
+            <h1 class="font-bold text-xl">Opening Hours</h1>
           </div>
-        </div>
-        <div class="order_items">
-          <ul class="w-full">
-            <li class="flex items-center h-12 border bg-gray-100 font-bold">
-              <div class="flex-1 flex items-center justify-center p-4">
-                Order Id
-              </div>
-              <div class="flex-1 flex items-center justify-center p-4">
-                Date
-              </div>
-              <div class="flex-1 flex items-center justify-center p-4">
-                Total Price
-              </div>
-              <div class="flex-1 flex items-center justify-center p-4">
-                Charges
-              </div>
-              <div class="flex-1 flex items-center justify-center p-4">
-                Reseved
-              </div>
-              <div class="flex-1 flex items-center justify-center p-4">
-                Status
-              </div>
-            </li>
-            <li
-              class="flex items-center h-14 border text-sm hover:bg-[#ebedf3]"
-            >
-              <div
-                class="flex-1 flex items-center justify-center p-4 text-blue-600"
-              >
-                <a href="#">Order-3344</a>
-              </div>
-              <div class="flex-1 flex items-center justify-center p-4">
-                April 9,22
-              </div>
-              <div class="flex-1 flex items-center justify-center p-4">
-                $ 32.44
-              </div>
-              <div class="flex-1 flex items-center justify-center p-4">
-                $20.21
-              </div>
-              <div class="flex-1 flex items-center justify-center p-4">$20</div>
-              <div class="flex-1 flex items-center justify-center p-4">
-                <button
-                  type="button"
-                  class="border w-24 bg-green-700 p-1 text-sm px-2"
-                >
-                  Completed
-                </button>
-              </div>
-            </li>
-            <li
-              class="flex items-center h-14 border text-sm hover:bg-[#ebedf3]"
-            >
-              <div
-                class="flex-1 flex items-center justify-center p-4 text-blue-600"
-              >
-                <a href="#">Order-3344</a>
-              </div>
-              <div class="flex-1 flex items-center justify-center p-4">
-                April 9,22
-              </div>
-              <div class="flex-1 flex items-center justify-center p-4">
-                $ 32.44
-              </div>
-              <div class="flex-1 flex items-center justify-center p-4">
-                $20.21
-              </div>
-              <div class="flex-1 flex items-center justify-center p-4">$20</div>
-              <div class="flex-1 flex items-center justify-center p-4">
-                <button
-                  type="button"
-                  class="border w-24 bg-blue-500 p-1 text-sm px-2"
-                >
-                  Proccessing
-                </button>
-              </div>
-            </li>
-            <li
-              class="flex items-center h-14 border text-sm hover:bg-[#ebedf3]"
-            >
-              <div
-                class="flex-1 flex items-center justify-center p-4 text-blue-600"
-              >
-                <a href="#">Order-3344</a>
-              </div>
-              <div class="flex-1 flex items-center justify-center p-4">
-                April 9,22
-              </div>
-              <div class="flex-1 flex items-center justify-center p-4">
-                $ 32.44
-              </div>
-              <div class="flex-1 flex items-center justify-center p-4">
-                $20.21
-              </div>
-              <div class="flex-1 flex items-center justify-center p-4">$20</div>
-              <div class="flex-1 flex items-center justify-center p-4">
-                <button
-                  type="button"
-                  class="border w-24 bg-green-700 p-1 text-sm px-2"
-                >
-                  Completed
-                </button>
-              </div>
-            </li>
-            <li
-              class="flex items-center h-14 border text-sm hover:bg-[#ebedf3]"
-            >
-              <div
-                class="flex-1 flex items-center justify-center p-4 text-blue-600"
-              >
-                <a href="#">Order-3344</a>
-              </div>
-              <div class="flex-1 flex items-center justify-center p-4">
-                April 9,22
-              </div>
-              <div class="flex-1 flex items-center justify-center p-4">
-                $ 32.44
-              </div>
-              <div class="flex-1 flex items-center justify-center p-4">
-                $20.21
-              </div>
-              <div class="flex-1 flex items-center justify-center p-4">$20</div>
-              <div class="flex-1 flex items-center justify-center p-4">
-                <button
-                  type="button"
-                  class="border bg-red-500 w-24 p-1 text-sm px-2"
-                >
-                  Canseled
-                </button>
-              </div>
-            </li>
-            <li
-              class="flex items-center h-14 border text-sm hover:bg-[#ebedf3]"
-            >
-              <div
-                class="flex-1 flex items-center justify-center p-4 text-blue-600"
-              >
-                <a href="#">Order-3344</a>
-              </div>
-              <div class="flex-1 flex items-center justify-center p-4">
-                April 9,22
-              </div>
-              <div class="flex-1 flex items-center justify-center p-4">
-                $ 32.44
-              </div>
-              <div class="flex-1 flex items-center justify-center p-4">
-                $20.21
-              </div>
-              <div class="flex-1 flex items-center justify-center p-4">$20</div>
-              <div class="flex-1 flex items-center justify-center p-4">
-                <button
-                  type="button"
-                  class="border w-24 bg-green-700 p-1 text-sm px-2"
-                >
-                  Completed
-                </button>
-              </div>
-            </li>
-            <li
-              class="flex items-center h-14 border text-sm hover:bg-[#ebedf3]"
-            >
-              <div
-                class="flex-1 flex items-center justify-center p-4 text-blue-600"
-              >
-                <a href="#">Order-3344</a>
-              </div>
-              <div class="flex-1 flex items-center justify-center p-4">
-                April 9,22
-              </div>
-              <div class="flex-1 flex items-center justify-center p-4">
-                $ 32.44
-              </div>
-              <div class="flex-1 flex items-center justify-center p-4">
-                $20.21
-              </div>
-              <div class="flex-1 flex items-center justify-center p-4">$20</div>
-              <div class="flex-1 flex items-center justify-center p-4">
-                <button
-                  type="button"
-                  class="border bg-red-500 w-24 p-1 text-sm px-2"
-                >
-                  Canseled
-                </button>
-              </div>
-            </li>
-          </ul>
+          <div>
+            <ul>
+              <li class="flex">
+                
+                <div class="flex items-center w-[20%]"><p class="text-gray-400 text-lg">Monday</p></div>
+                <div class="flex flex-col w-full">
+                    <select class="border border-gray-300 p-2">
+                        <option value="12:15 am">12:15 am</option>
+                        <option value="12:30 am">12:30 am</option>
+                        <option value="01:00 am">01:00 am</option>
+                        <option value="01:15 am">01:15 am</option>
+                        <option value="01:30 am">01:30 am</option>
+                        <option value="02:00 am">02:00 am</option>
+                        <option value="02:15 am">02:15 am</option>
+                        <option value="02:30 am">02:30 am</option>
+                        <option value="03:00 am">03:00 am</option>
+                        <option value="03:15 am">03:15 am</option>
+                      </select>
+                      <span class="mx-2">to</span>
+                      <select class="border border-gray-300  p-2">
+                        <option value="12:15 am">12:15 am</option>
+                        <option value="12:30 am">12:30 am</option>
+                        <option value="01:00 am">01:00 am</option>
+                        <option value="01:15 am">01:15 am</option>
+                        <option value="01:30 am">01:30 am</option>
+                        <option value="02:00 am">02:00 am</option>
+                        <option value="02:15 am">02:15 am</option>
+                        <option value="02:30 am">02:30 am</option>
+                        <option value="03:00 am">03:00 am</option>
+                        <option value="03:15 am">03:15 am</option>
+                      </select>
+                      <a href="#" class="text-red-500 relative left-[98%] py-1"><i class="icon-close2">X</i></a>
+                    </div>
+                   
+                </div>
+              </li>
+             <!--  -->
+             
+              
+            </ul>
+          </div>
         </div>
       </main>
     </div>
