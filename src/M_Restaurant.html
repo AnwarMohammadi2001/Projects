@@ -59,10 +59,10 @@
       </div>
     </header>
     <!-- Main dashboard -->
-    <div class="flex gap-10 mb-40">
-      <!-- Aside dashoard--------------  -->
+    <div class="flex gap-10 h-auto">
+      <!-- Items dashoard--------------  -->
       <div
-        class="w-[25%] shadow-md border-t-4 ml-32 mt-16 "
+        class="w-[25%] shadow-md border-t-4 ml-32 mt-16 mb-40 h-fit"
         style="background-color: #fff"
       >
         <div class="flex items-center">
@@ -88,7 +88,7 @@
             </li>
             <!-- mu restauarnt -->
             <li class="text-sm font-bold border-b-2 hover:text-red-700">
-              <a href="M_Restaurant.html" class="flex items-center py-2 px-4">
+              <a href="my_restaurant.html" class="flex items-center py-2 px-4">
                 <svg
                   class="w-6 h-6 mr-4"
                   xmlns="http://www.w3.org/2000/svg"
@@ -314,69 +314,70 @@
           </ul>
         </div>
       </div>
-      <!-- Recent order section -->
+
+      <!--  order section -->
       <main
-        class="w-[80%] mt-16 mr-32 border-t-4 h-fitgit"
+        class="w-[80%] mt-16 mb-16 mr-32 border-t-4 h-fit"
         style="background-color: #fff"
       >
-        <div class="w-full px-10 h-fit">
-          <div class="flex items-center justify-evenly mt-5 py-5 font-bold">
-            <a href="my_restaurant.html">
-              <button class="py-2 px-3 w-64 bg-red-500 text-white rounded">
-                Restaurant Settings
-              </button></a
-            >
-            <button class="py-2 px-3 bg-red-500 text-white rounded">
-              Location/Map
-            </button>
-            <button class="py-2 px-3 w-64 bg-red-500 text-white rounded">
-              Restaurant Open/Close
-            </button>
+        <!-- Header main -->
+        <div
+          class="flex gap-10 items-center px-10 justify-between border w-full h-16"
+        >
+          <div class="recent_order items-center">
+            <h1 class="font-bold text-lg">ORDERS</h1>
           </div>
-          <div class="py-5">
+          <div class="recent_order items-center">
+            <h1 class="font-bold text-lg">ORDERS</h1>
+          </div>
+          <div class="recent_order items-center">
+            <h1 class="font-bold text-lg">ORDERS</h1>
+          </div>
+        </div>
+        <!-- Order items -->
+        <div class="order_items h-auto">
+          <div class="border px-10 py-5">
             <h1 class="font-bold text-xl">Opening Hours</h1>
           </div>
-          <div>
-            <ul>
-              <li class="flex">
-                
-                <div class="flex items-center w-[20%]"><p class="text-gray-400 text-lg">Monday</p></div>
-                <div class="flex flex-col w-full">
-                    <select class="border border-gray-300 p-2">
-                        <option value="12:15 am">12:15 am</option>
-                        <option value="12:30 am">12:30 am</option>
-                        <option value="01:00 am">01:00 am</option>
-                        <option value="01:15 am">01:15 am</option>
-                        <option value="01:30 am">01:30 am</option>
-                        <option value="02:00 am">02:00 am</option>
-                        <option value="02:15 am">02:15 am</option>
-                        <option value="02:30 am">02:30 am</option>
-                        <option value="03:00 am">03:00 am</option>
-                        <option value="03:15 am">03:15 am</option>
-                      </select>
-                      <span class="mx-2">to</span>
-                      <select class="border border-gray-300  p-2">
-                        <option value="12:15 am">12:15 am</option>
-                        <option value="12:30 am">12:30 am</option>
-                        <option value="01:00 am">01:00 am</option>
-                        <option value="01:15 am">01:15 am</option>
-                        <option value="01:30 am">01:30 am</option>
-                        <option value="02:00 am">02:00 am</option>
-                        <option value="02:15 am">02:15 am</option>
-                        <option value="02:30 am">02:30 am</option>
-                        <option value="03:00 am">03:00 am</option>
-                        <option value="03:15 am">03:15 am</option>
-                      </select>
-                      <a href="#" class="text-red-500 relative left-[98%] py-1"><i class="icon-close2">X</i></a>
-                    </div>
-                   
+          <ul class="w-full">
+            <!-- Order items name -->
+            <li class="flex items-center border mt-5 font-bold">
+              <div class="flex gap-10 w-full">
+                <div class="flex items-center w-[20%]">
+                  <span>Monday</span>
                 </div>
-              </li>
-             <!--  -->
-             
-              
-            </ul>
-          </div>
+                <div class="w-full flex flex-col">
+                  <select class="py-3 bg-gray-100">
+                    <option value="12:15 am">12:15 am</option>
+                    <option value="12:30 am">12:30 am</option>
+                    <option value="01:00 am">01:00 am</option>
+                    <option value="01:15 am">01:15 am</option>
+                    <option value="01:30 am">01:30 am</option>
+                    <option value="02:00 am">02:00 am</option>
+                    <option value="02:15 am">02:15 am</option>
+                    <option value="02:30 am">02:30 am</option>
+                    <option value="03:00 am">03:00 am</option>
+                    <option value="03:15 am">03:15 am</option>
+                  </select>
+                  <span class="option-label">to</span>
+                  <select class="py-3 bg-gray-100">
+                    <option value="12:15 am">12:15 am</option>
+                    <option value="12:30 am">12:30 am</option>
+                    <option value="01:00 am">01:00 am</option>
+                    <option value="01:15 am">01:15 am</option>
+                    <option value="01:30 am">01:30 am</option>
+                    <option value="02:00 am">02:00 am</option>
+                    <option value="02:15 am">02:15 am</option>
+                    <option value="02:30 am">02:30 am</option>
+                    <option value="03:00 am">03:00 am</option>
+                    <option value="03:15 am">03:15 am</option>
+                  </select>
+                  <a href="#"><i class="icon-close2"></i></a>
+                </div>
+              </div>
+            </li>
+            <!-- order items -->
+          </ul>
         </div>
       </main>
     </div>
