@@ -3,9 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/assets/css/main.css" />
-    <link rel="stylesheet" href="/assets/css/style.css" />
-    <title>M-restaurant</title>
+    <link rel="stylesheet" href="../../assets/css/main.css" />
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+    <link rel="stylesheet" href="../../assets/css/slider_style.css" />
+    <title>Menu Builder</title>
   </head>
   <body style="background-color: #ebedf3">
     <!-- hero section -->
@@ -59,10 +60,10 @@
       </div>
     </header>
     <!-- Main dashboard -->
-    <div class="flex gap-10 h-auto">
-      <!-- Items dashoard--------------  -->
+    <div class="flex gap-10" style="background-color: #ebedf3">
+      <!-- Aside dashboard  -->
       <div
-        class="w-[25%] shadow-md border-t-4 ml-32 mt-16 mb-40 h-fit"
+        class="w-[25%] shadow-md border-t-4 ml-32 mt-16 h-fit"
         style="background-color: #fff"
       >
         <div class="flex items-center">
@@ -153,7 +154,6 @@
                 <span class=""> BOOKING</span>
               </a>
             </li>
-            <!-- ------- review -->
             <li class="text-sm font-bold border-b-2 hover:text-red-700">
               <a href="#" class="flex items-center py-2 px-4">
                 <svg
@@ -163,45 +163,12 @@
                   fill="currentColor"
                 >
                   <path
-                    d="M2 8.99374C2 5.68349 4.67654 3 8.00066 3H15.9993C19.3134 3 22 5.69478 22 8.99374V21H8.00066C4.68659 21 2 18.3052 2 15.0063V8.99374ZM20 19V8.99374C20 6.79539 18.2049 5 15.9993 5H8.00066C5.78458 5 4 6.78458 4 8.99374V15.0063C4 17.2046 5.79512 19 8.00066 19H20ZM14 11H16V13H14V11ZM8 11H10V13H8V11Z"
+                    d="M20 22H4C3.44772 22 3 21.5523 3 21V3C3 2.44772 3.44772 2 4 2H20C20.5523 2 21 2.44772 21 3V21C21 21.5523 20.5523 22 20 22ZM19 20V4H5V20H19ZM8 7H16V9H8V7ZM8 11H16V13H8V11ZM8 15H16V17H8V15Z"
                   ></path>
                 </svg>
-                <span class="">REVIEW</span>
+                <span class=""> Open Hours</span>
               </a>
             </li>
-            <!-- -------memebership -->
-            <li class="text-sm font-bold border-b-2 hover:text-red-700">
-              <a href="#" class="flex items-center py-2 px-4">
-                <svg
-                  class="w-6 h-6 mr-4"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                >
-                  <path
-                    d="M3 18H21V6H3V18ZM1 5C1 4.44772 1.44772 4 2 4H22C22.5523 4 23 4.44772 23 5V19C23 19.5523 22.5523 20 22 20H2C1.44772 20 1 19.5523 1 19V5ZM9 10C9 9.44772 8.55228 9 8 9C7.44772 9 7 9.44772 7 10C7 10.5523 7.44772 11 8 11C8.55228 11 9 10.5523 9 10ZM11 10C11 11.6569 9.65685 13 8 13C6.34315 13 5 11.6569 5 10C5 8.34315 6.34315 7 8 7C9.65685 7 11 8.34315 11 10ZM8.0018 16C7.03503 16 6.1614 16.3907 5.52693 17.0251L4.11272 15.6109C5.10693 14.6167 6.4833 14 8.0018 14C9.52031 14 10.8967 14.6167 11.8909 15.6109L10.4767 17.0251C9.84221 16.3907 8.96858 16 8.0018 16ZM16.2071 14.7071L20.2071 10.7071L18.7929 9.29289L15.5 12.5858L13.7071 10.7929L12.2929 12.2071L14.7929 14.7071L15.5 15.4142L16.2071 14.7071Z"
-                  ></path>
-                </svg>
-                <span class="">MEMBERSHIPS</span>
-              </a>
-            </li>
-            <!-- -------withdrwalas -->
-            <li class="text-sm font-bold border-b-2 hover:text-red-700">
-              <a href="#" class="flex items-center py-2 px-4">
-                <svg
-                  class="w-6 h-6 mr-4"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                >
-                  <path
-                    d="M20 22H4C3.44772 22 3 21.5523 3 21V3C3 2.44772 3.44772 2 4 2H20C20.5523 2 21 2.44772 21 3V21C21 21.5523 20.5523 22 20 22ZM19 20V4H5V20H19ZM8 9H16V11H8V9ZM8 13H16V15H8V13Z"
-                  ></path>
-                </svg>
-                <span class="">WIDTHDRAWALS</span>
-              </a>
-            </li>
-            <!-- ------- -->
 
             <!-- ---------------- EARNINGS -->
             <li class="text-sm font-bold border-b-2 hover:text-red-700">
@@ -222,79 +189,7 @@
                 <span class=""> EARNINGS</span>
               </a>
             </li>
-            <!-- ----------------STATEMENT -->
-            <li class="text-sm font-bold border-b-2 hover:text-red-700">
-              <a href="#" class="flex items-center py-2 px-4">
-                <svg
-                  class="w-6 h-6 mr-4"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                >
-                  <path
-                    d="M21 8V20.9932C21 21.5501 20.5552 22 20.0066 22H3.9934C3.44495 22 3 21.556 3 21.0082V2.9918C3 2.45531 3.4487 2 4.00221 2H14.9968L21 8ZM19 9H14V4H5V20H19V9ZM8 7H11V9H8V7ZM8 11H16V13H8V11ZM8 15H16V17H8V15Z"
-                  ></path>
-                </svg>
-                <span class=""> STATEMENT</span>
-              </a>
-            </li>
-            <!-- ----------------team management -->
-            <li class="text-sm font-bold border-b-2 hover:text-red-700">
-              <a href="#" class="flex items-center py-2 px-4">
-                <svg
-                  class="w-6 h-6 mr-4"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                >
-                  <path
-                    d="M21 8V20.9932C21 21.5501 20.5552 22 20.0066 22H3.9934C3.44495 22 3 21.556 3 21.0082V2.9918C3 2.45531 3.4487 2 4.00221 2H14.9968L21 8ZM19 9H14V4H5V20H19V9ZM8 7H11V9H8V7ZM8 11H16V13H8V11ZM8 15H16V17H8V15Z"
-                  ></path>
-                </svg>
-                <span class=""> TEAMMANAGEMENT</span>
-              </a>
-            </li>
-            <!-- ------------CHANGE PASSWORD -->
-            <li class="text-sm font-bold border-b-2 hover:text-red-700">
-              <a
-                href="change-password.html"
-                class="flex items-center py-2 px-4"
-              >
-                <svg
-                  class="w-6 h-6 mr-4"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                >
-                  <path
-                    d="M7 10H20C20.5523 10 21 10.4477 21 11V21C21 21.5523 20.5523 22 20 22H4C3.44772 22 3 21.5523 3 21V11C3 10.4477 3.44772 10 4 10H5V9C5 5.13401 8.13401 2 12 2C14.7405 2 17.1131 3.5748 18.2624 5.86882L16.4731 6.76344C15.6522 5.12486 13.9575 4 12 4C9.23858 4 7 6.23858 7 9V10ZM5 12V20H19V12H5ZM10 15H14V17H10V15Z"
-                  ></path>
-                </svg>
-                <span class=""> CHANGE PASSWORD</span>
-              </a>
-            </li>
-            <!-- delet profile -->
-            <li class="text-sm font-bold border-b-2 hover:text-red-700">
-              <a href="#" class="flex items-center py-2 px-4">
-                <svg
-                  class="w-6 h-6 mr-4"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="w-6 h-6"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="m14.74 9-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 0 1-2.244 2.077H8.084a2.25 2.25 0 0 1-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 0 0-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 0 1 3.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 0 0-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 0 0-7.5 0"
-                  />
-                </svg>
 
-                <span class=""> DELETE PROFILE</span>
-              </a>
-            </li>
             <!-- ------------SIGNOUT -->
             <li class="text-sm font-bold border-b-2 hover:text-red-700">
               <a href="#" class="flex items-center py-2 px-4">
@@ -314,69 +209,167 @@
           </ul>
         </div>
       </div>
-
-      <!--  order section -->
+      <!-- Recent order section -->
       <main
-        class="w-[80%] mt-16 mb-16 mr-32 border-t-4 h-fit"
+        class="w-[80%] mt-16 mb-16 mr-32 border-t-4 h-96"
         style="background-color: #fff"
       >
-        <!-- Header main -->
+        <!-- menu builder header -->
         <div
-          class="flex gap-10 items-center px-10 justify-between border w-full h-16"
+          class="flex items-center justify-between px-8 border-b w-full h-16"
         >
           <div class="recent_order items-center">
-            <h1 class="font-bold text-lg">ORDERS</h1>
-          </div>
-          <div class="recent_order items-center">
-            <h1 class="font-bold text-lg">ORDERS</h1>
-          </div>
-          <div class="recent_order items-center">
-            <h1 class="font-bold text-lg">ORDERS</h1>
+            <h1 class="font-bold text-lg">BUILD YOUR FOOD MENU</h1>
           </div>
         </div>
-        <!-- Order items -->
-        <div class="order_items h-auto">
-          <div class="border px-10 py-5">
-            <h1 class="font-bold text-xl">Opening Hours</h1>
+        <div class="mt-3 font-bold px-10 text-lg">
+          <h1>Menu Categories</h1>
+        </div>
+        <!-- Categories button -->
+        <div class="flex justify-end gap-x-2 items-center px-8">
+          <div
+            class="px-3 py-1 border w-36 text-center rounded-md bg-green-700 text-white"
+          >
+            <button type="button">+ Add Category</button>
           </div>
-          <ul class="w-full">
-            <!-- Order items name -->
-            <li class="flex items-center border mt-5 font-bold">
-              <div class="flex gap-10 w-full">
-                <div class="flex items-center w-[20%]">
-                  <span>Monday</span>
+          <div
+            class="px-3 py-1 border w-36 text-center rounded-md bg-blue-700 text-white"
+          >
+            <button type="button">+ Add Food</button>
+          </div>
+        </div>
+        <!-- Menu list -->
+        <div class="w-full mt-4">
+          <ul>
+            <li
+              class="flex justify-between py-1 px-10 mb-1 border-gray-200 hover:bg-[#ebedf3]"
+            >
+              <div class="">
+                <div class="flex font-bold">
+                  <h1>1</h1>
+                  <h1 class="pl-10">Chicken</h1>
                 </div>
-                <div class="w-full flex flex-col">
-                  <select class="py-3 bg-gray-100">
-                    <option value="12:15 am">12:15 am</option>
-                    <option value="12:30 am">12:30 am</option>
-                    <option value="01:00 am">01:00 am</option>
-                    <option value="01:15 am">01:15 am</option>
-                    <option value="01:30 am">01:30 am</option>
-                    <option value="02:00 am">02:00 am</option>
-                    <option value="02:15 am">02:15 am</option>
-                    <option value="02:30 am">02:30 am</option>
-                    <option value="03:00 am">03:00 am</option>
-                    <option value="03:15 am">03:15 am</option>
-                  </select>
-                  <span class="option-label">to</span>
-                  <select class="py-3 bg-gray-100">
-                    <option value="12:15 am">12:15 am</option>
-                    <option value="12:30 am">12:30 am</option>
-                    <option value="01:00 am">01:00 am</option>
-                    <option value="01:15 am">01:15 am</option>
-                    <option value="01:30 am">01:30 am</option>
-                    <option value="02:00 am">02:00 am</option>
-                    <option value="02:15 am">02:15 am</option>
-                    <option value="02:30 am">02:30 am</option>
-                    <option value="03:00 am">03:00 am</option>
-                    <option value="03:15 am">03:15 am</option>
-                  </select>
-                  <a href="#"><i class="icon-close2"></i></a>
+                <div>
+                  <p class="pl-12">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
+                  </p>
                 </div>
               </div>
+              <div class="flex items-center space-x-4 text-sm">
+                <button class="add-icon" aria-label="Add">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="size-6"
+                  >
+                    <path
+                      d="M21.731 2.269a2.625 2.625 0 0 0-3.712 0l-1.157 1.157 3.712 3.712 1.157-1.157a2.625 2.625 0 0 0 0-3.712ZM19.513 8.199l-3.712-3.712-12.15 12.15a5.25 5.25 0 0 0-1.32 2.214l-.8 2.685a.75.75 0 0 0 .933.933l2.685-.8a5.25 5.25 0 0 0 2.214-1.32L19.513 8.2Z"
+                    />
+                  </svg>
+                </button>
+                <button class="remove-icon text-red-500" aria-label="Remove">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="size-6"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M16.5 4.478v.227a48.816 48.816 0 0 1 3.878.512.75.75 0 1 1-.256 1.478l-.209-.035-1.005 13.07a3 3 0 0 1-2.991 2.77H8.084a3 3 0 0 1-2.991-2.77L4.087 6.66l-.209.035a.75.75 0 0 1-.256-1.478A48.567 48.567 0 0 1 7.5 4.705v-.227c0-1.564 1.213-2.9 2.816-2.951a52.662 52.662 0 0 1 3.369 0c1.603.051 2.815 1.387 2.815 2.951Zm-6.136-1.452a51.196 51.196 0 0 1 3.273 0C14.39 3.05 15 3.684 15 4.478v.113a49.488 49.488 0 0 0-6 0v-.113c0-.794.609-1.428 1.364-1.452Zm-.355 5.945a.75.75 0 1 0-1.5.058l.347 9a.75.75 0 1 0 1.499-.058l-.346-9Zm5.48.058a.75.75 0 1 0-1.498-.058l-.347 9a.75.75 0 0 0 1.5.058l.345-9Z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </button>
+              </div>
             </li>
-            <!-- order items -->
+            <li
+              class="flex justify-between py-1 px-10 mb-1 border-gray-200 hover:bg-[#ebedf3]"
+            >
+              <div class="">
+                <div class="flex font-bold">
+                  <h1>2</h1>
+                  <h1 class="pl-10">Barger</h1>
+                </div>
+                <div>
+                  <p class="pl-12">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-center space-x-4 text-sm">
+                <button class="add-icon" aria-label="Add">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="size-6"
+                  >
+                    <path
+                      d="M21.731 2.269a2.625 2.625 0 0 0-3.712 0l-1.157 1.157 3.712 3.712 1.157-1.157a2.625 2.625 0 0 0 0-3.712ZM19.513 8.199l-3.712-3.712-12.15 12.15a5.25 5.25 0 0 0-1.32 2.214l-.8 2.685a.75.75 0 0 0 .933.933l2.685-.8a5.25 5.25 0 0 0 2.214-1.32L19.513 8.2Z"
+                    />
+                  </svg>
+                </button>
+                <button class="remove-icon text-red-500" aria-label="Remove">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="size-6"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M16.5 4.478v.227a48.816 48.816 0 0 1 3.878.512.75.75 0 1 1-.256 1.478l-.209-.035-1.005 13.07a3 3 0 0 1-2.991 2.77H8.084a3 3 0 0 1-2.991-2.77L4.087 6.66l-.209.035a.75.75 0 0 1-.256-1.478A48.567 48.567 0 0 1 7.5 4.705v-.227c0-1.564 1.213-2.9 2.816-2.951a52.662 52.662 0 0 1 3.369 0c1.603.051 2.815 1.387 2.815 2.951Zm-6.136-1.452a51.196 51.196 0 0 1 3.273 0C14.39 3.05 15 3.684 15 4.478v.113a49.488 49.488 0 0 0-6 0v-.113c0-.794.609-1.428 1.364-1.452Zm-.355 5.945a.75.75 0 1 0-1.5.058l.347 9a.75.75 0 1 0 1.499-.058l-.346-9Zm5.48.058a.75.75 0 1 0-1.498-.058l-.347 9a.75.75 0 0 0 1.5.058l.345-9Z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </li>
+            <li
+              class="flex justify-between py-1 px-10 mb-1 border-gray-200 hover:bg-[#ebedf3]"
+            >
+              <div class="">
+                <div class="flex font-bold">
+                  <h1>3</h1>
+                  <h1 class="pl-10">Pizza</h1>
+                </div>
+                <div>
+                  <p class="pl-12">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-center space-x-4 text-sm">
+                <button class="add-icon" aria-label="Add">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="size-6"
+                  >
+                    <path
+                      d="M21.731 2.269a2.625 2.625 0 0 0-3.712 0l-1.157 1.157 3.712 3.712 1.157-1.157a2.625 2.625 0 0 0 0-3.712ZM19.513 8.199l-3.712-3.712-12.15 12.15a5.25 5.25 0 0 0-1.32 2.214l-.8 2.685a.75.75 0 0 0 .933.933l2.685-.8a5.25 5.25 0 0 0 2.214-1.32L19.513 8.2Z"
+                    />
+                  </svg>
+                </button>
+                <button class="remove-icon text-red-500" aria-label="Remove">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="size-6"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M16.5 4.478v.227a48.816 48.816 0 0 1 3.878.512.75.75 0 1 1-.256 1.478l-.209-.035-1.005 13.07a3 3 0 0 1-2.991 2.77H8.084a3 3 0 0 1-2.991-2.77L4.087 6.66l-.209.035a.75.75 0 0 1-.256-1.478A48.567 48.567 0 0 1 7.5 4.705v-.227c0-1.564 1.213-2.9 2.816-2.951a52.662 52.662 0 0 1 3.369 0c1.603.051 2.815 1.387 2.815 2.951Zm-6.136-1.452a51.196 51.196 0 0 1 3.273 0C14.39 3.05 15 3.684 15 4.478v.113a49.488 49.488 0 0 0-6 0v-.113c0-.794.609-1.428 1.364-1.452Zm-.355 5.945a.75.75 0 1 0-1.5.058l.347 9a.75.75 0 1 0 1.499-.058l-.346-9Zm5.48.058a.75.75 0 1 0-1.498-.058l-.347 9a.75.75 0 0 0 1.5.058l.345-9Z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </li>
           </ul>
         </div>
       </main>
