@@ -92,9 +92,9 @@
         </div>
       </nav>
     </header>
-    <!-- Hero -->
+    <!-- Hero image background -->
     <div
-      class="mb-20"
+      class="mb-14"
       style="
         background: url('/assets/images/marketplace-bg.webp');
 
@@ -105,7 +105,8 @@
       "
     >
       <div class="bg-opacity-50 bg-slate-900 h-full w-full flex items-center">
-        <div class="flex items-center ml-40">
+        <!-- image and name -->
+        <div class="flex items-center w-1/2 ml-40">
           <!-- image -->
           <div>
             <img
@@ -149,7 +150,274 @@
             </div>
           </div>
         </div>
+        <div class="flex w-1/2 items-center justify-center">
+          <div class="w-[50%]">
+            <select
+              id="day-select"
+              name="day"
+              class="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+            >
+              <option>Select day</option>
+              <option>Monday</option>
+              <option>Tuesday</option>
+              <option>Wednesday</option>
+              <option>Thursday</option>
+              <option>Friday</option>
+              <option>Saturday</option>
+              <option>Sunday</option>
+            </select>
+          </div>
+        </div>
       </div>
+    </div>
+    <div class="flex gap-10">
+      <!-- Aside dashboard  -->
+      <div class="w-[25%] ml-32 mt-10 mb-40 h-fit">
+        <div class="flex items-center">
+          <ul class="w-full h-auto">
+            <!-- dashboard -->
+            <li class="text-sm font-bold">
+              <a
+                href="#"
+                class="flex items-center py-2 px-4 space-x-4 hover:text-black"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  id="restaurant"
+                >
+                  <path fill="none" d="M0 0h24v24H0V0z"></path>
+                  <path
+                    d="M8.1 13.34l2.83-2.83-6.19-6.18c-.48-.48-1.31-.35-1.61.27-.71 1.49-.45 3.32.78 4.56l4.19 4.18zm6.78-1.81c1.53.71 3.68.21 5.27-1.38 1.91-1.91 2.28-4.65.81-6.12-1.46-1.46-4.2-1.1-6.12.81-1.59 1.59-2.09 3.74-1.38 5.27L4.4 19.17c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0L12 14.41l6.18 6.18c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L13.41 13l1.47-1.47z"
+                  ></path>
+                </svg>
+                <span class="text-black text-lg tracking-widest"
+                  >Categories</span
+                >
+              </a>
+            </li>
+            <li class="text-sm px-5 border-b-2">
+              <a
+                href="#"
+                class="flex items-center py-2 px-4 space-x-4 hover:text-black"
+              >
+                <span class="text-red-500 text-sm font-medium"
+                  >Checen(Update)</span
+                >
+              </a>
+            </li>
+            <li class="text-sm px-5 border-b-2">
+              <a
+                href="#"
+                class="flex items-center py-2 px-4 space-x-4 hover:text-black"
+              >
+                <span class="text-red-500 text-sm font-medium"
+                  >Checen(Update)</span
+                >
+              </a>
+            </li>
+            <li class="text-sm px-5 border-b-2">
+              <a
+                href="#"
+                class="flex items-center py-2 px-4 space-x-4 hover:text-black"
+              >
+                <span class="text-red-500 text-sm font-medium"
+                  >Checen(Update)</span
+                >
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Suggested restaurant section -->
+      <main class="w-[80%] mt-10 mr-32">
+        <div
+          class="bg-[#fff] rounded-tl-lg font-bold text-red-500 text-center px-1 py-2 w-32"
+        >
+          Menu
+        </div>
+        <div class="w-full" style="background-color: #fff">
+          <div class="px-7">
+            <a href="#" class="underline text-red-500"
+              ><h1 class="pt-3 text-lg font-bold">Checken(Update)</h1></a
+            >
+            <span class="text-gray-400"
+              >Garlic bread also garlic toast consists of bread usually a
+              baguette or sour dough like a ciabatta
+            </span>
+          </div>
+          <ul class="mt-5 px-7">
+            <!-- items -->
+            <li class="flex mb-10 border-b pb-4">
+              <div class="">
+                <img
+                  class="w-[80px] h-[80px]"
+                  src="/assets/images/Other Images/fb-restaurant-02.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="ml-5 w-[80%]">
+                <h2 class="font-bold text-lg tracking-wider">Our Best Food</h2>
+                <span class="text-gray-400">Categori</span>
+              </div>
+              <div class="flex items-center w-[20%] justify-between">
+                <div><p>$300.00</p></div>
+                <div>
+                  <i
+                    class="flex justify-center text-red-500 border border-red-500 rounded-[50%] p-1 text-center"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-4"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M5 12h14"
+                      />
+                    </svg>
+                  </i>
+                </div>
+                <div><p>0</p></div>
+                <div>
+                  <i
+                    class="flex justify-center text-red-500 border border-red-500 rounded-[50%] p-1 text-center"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-4"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M12 4.5v15m7.5-7.5h-15"
+                      />
+                    </svg>
+                  </i>
+                </div>
+              </div>
+            </li>
+            <li class="flex mb-10 border-b pb-4">
+              <div class="">
+                <img
+                  class="w-[80px] h-[80px]"
+                  src="/assets/images/Other Images/fb-restaurant-02.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="ml-5 w-[80%]">
+                <h2 class="font-bold text-lg tracking-wider">Our Best Food</h2>
+                <span class="text-gray-400">Categori</span>
+              </div>
+              <div class="flex items-center w-[20%] justify-between">
+                <div><p>$300.00</p></div>
+                <div>
+                  <i
+                    class="flex justify-center text-red-500 border border-red-500 rounded-[50%] p-1 text-center"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-4"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M5 12h14"
+                      />
+                    </svg>
+                  </i>
+                </div>
+                <div><p>0</p></div>
+                <div>
+                  <i
+                    class="flex justify-center text-red-500 border border-red-500 rounded-[50%] p-1 text-center"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-4"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M12 4.5v15m7.5-7.5h-15"
+                      />
+                    </svg>
+                  </i>
+                </div>
+              </div>
+            </li>
+            <li class="flex mb-10 border-b pb-4">
+              <div class="">
+                <img
+                  class="w-[80px] h-[80px]"
+                  src="/assets/images/Other Images/fb-restaurant-02.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="ml-5 w-[80%]">
+                <h2 class="font-bold text-lg tracking-wider">Our Best Food</h2>
+                <span class="text-gray-400">Categori</span>
+              </div>
+              <div class="flex items-center w-[20%] justify-between">
+                <div><p>$300.00</p></div>
+                <div>
+                  <i
+                    class="flex justify-center text-red-500 border border-red-500 rounded-[50%] p-1 text-center"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-4"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M5 12h14"
+                      />
+                    </svg>
+                  </i>
+                </div>
+                <div><p>0</p></div>
+                <div>
+                  <i
+                    class="flex justify-center text-red-500 border border-red-500 rounded-[50%] p-1 text-center"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-4"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M12 4.5v15m7.5-7.5h-15"
+                      />
+                    </svg>
+                  </i>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </main>
     </div>
     <!-- footer -->
     <footer
@@ -191,5 +459,6 @@
         </p>
       </div>
     </footer>
+    <script src="/assets/Js/marketplace.js"></script>
   </body>
 </html>
