@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/assets/css/main.css" />
     <link rel="stylesheet" href="/assets/css/style.css" />
-    <title>Restaurant dashboard</title>
+    <title>Open Hour</title>
   </head>
   <body style="background-color: #ebedf3">
     <!-- hero section -->
@@ -220,39 +220,66 @@
             <h1 class="font-bold text-xl tracking-wider">Opening Hours</h1>
           </div>
         </div>
-        <div class="px-10">
-          <table class="bg-white w-full border-gray-300">
-            <thead class="">
-              <tr>
-                <th class="py-2 px-4 bg-gray-200 border-b">Open Hour</th>
-                <th class="py-2 px-4 bg-gray-200 border-b">Close Hour</th>
-                <th class="py-2 px-4 bg-gray-200 border-b">Submit</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="py-2 px-4 border-b">
-                  <input
-                    type="time"
-                    class="border border-gray-300 p-2 rounded w-full"
-                  />
-                </td>
-                <td class="py-2 px-4 border-b">
-                  <input
-                    type="time"
-                    class="border border-gray-300 p-2 rounded w-full"
-                  />
-                </td>
-                <td class="py-2 px-4 border-b text-center">
-                  <button class="bg-red-500 text-white px-4 py-2 rounded">
-                    Submit
-                  </button>
-                </td>
-              </tr>
-              <!-- Add more rows as needed -->
-            </tbody>
-          </table>
-        </div>
+        <form action="">
+          <div class="px-10">
+            <table class="bg-white w-full border-gray-300">
+              <thead class="">
+                <tr>
+                  <th class="py-2 px-4 bg-gray-200 border-b">Open Hour</th>
+                  <th class="py-2 px-4 bg-gray-200 border-b">Close Hour</th>
+                  <th class="py-2 px-4 bg-gray-200 border-b">Stutus</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="py-2 px-4 border-b">
+                    <input
+                      type="time"
+                      class="border border-gray-300 p-2 rounded w-full"
+                    />
+                  </td>
+                  <td class="py-2 px-4 border-b">
+                    <input
+                      type="time"
+                      class="border border-gray-300 p-2 rounded w-full"
+                    />
+                  </td>
+                  <td class="py-2 px-4 border-b text-center">
+                    <div class="flex justify-center items-center space-x-5">
+                      <div>
+                        <label class="block items-center">
+                          <span class="ml-2 text-gray-700">Open</span>
+                        </label>
+                        <input
+                          type="checkbox"
+                          class="form-checkbox w-4 h-4 text-blue-600"
+                        />
+                      </div>
+                      <div>
+                        <label class="block items-center">
+                          <span class="ml-2 text-gray-700">Close</span>
+                        </label>
+                        <input
+                          type="checkbox"
+                          class="form-checkbox w-4 h-4 text-red-600"
+                        />
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <!-- Add more rows as needed -->
+              </tbody>
+            </table>
+            <div class="mt-5">
+              <button
+                type="submit"
+                class="bg-red-500 hover:bg-red-800 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+              >
+                Save
+              </button>
+            </div>
+          </div>
+        </form>
       </main>
     </div>
     <!-- Footer -->

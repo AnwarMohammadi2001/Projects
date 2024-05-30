@@ -1,9 +1,4 @@
 /* index.html */
-#hero {
-  background-image: url("/assets/images/bg-image1.jpg");
-  height: 85vh;
-}
-
 /* login.html */
 #login-hero {
   background-image: url("/assets/images/login-bg3.jpg");
