@@ -23,7 +23,7 @@
     />
     <title>Multi Vendore Restaurant</title>
   </head>
-  <body>
+  <body class="font-vazir">
     <!--Navbar section-->
     <header class="bg-slate-50 drop-shadow-lg">
       <nav
@@ -135,14 +135,14 @@
         <!-- Name Searcher -->
         <div class="col-span-3 p-1">
           <input
-            class="w-full outline-none h-full pl-3 placeholder-gray-500 placeholder-opacity-50"
+            class="w-full outline-none h-full pr-3 placeholder-gray-500 placeholder-opacity-50"
             type="text"
-            placeholder="RESRAURANT NAME"
+            placeholder="نام رستورانت"
           />
         </div>
         <!-- Location Searcher -->
         <div class="flex col-span-2 p-1 relative items-center">
-          <label for="focus" class="absolute left-1 items-center">
+          <label for="focus" class="absolute right-2 items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -164,24 +164,24 @@
             </svg>
           </label>
           <input
-            class="w-full h-full outline-none pl-8 placeholder-gray-500 placeholder-opacity-50"
+            class="w-full h-full outline-none pr-7 placeholder-gray-500 placeholder-opacity-50"
             type="text"
-            placeholder="ALL LOCATION"
+            placeholder=" تمام محل ها"
           />
         </div>
         <!-- Button -->
         <div
-          class="flex col-span-1 justify-center items-center bg-green-500 rounded text-white hover:bg-green-800"
+          class="flex col-span-1 justify-center items-center bg-green-500 rounded text-white duration-200 hover:bg-green-800"
         >
-          <button class="text-xl font-bold p-1">SEARCH</button>
+          <button class="text-xl font-bold p-1">جستجو کردن</button>
         </div>
       </div>
     </section>
     <!-- Top restaurnat  -->
-    <section class="border-2 border-red-950" id="top_wrapper_restaurant">
+    <section class="mt-5" id="top_wrapper_restaurant">
       <!-- name -->
-      <h1>TOP RESTAUANT</h1>
-      <p>Explore restaurants, bars, and cafés by locality</p>
+      <h1 class="text-3xl font-bold">رستورانت های برتر</h1>
+      <p>رستوران‌ها، بارها و کافه‌ها را بر اساس محل جستجو کنید</p>
       <div class="" id="top-restaurant">
         <div class="wrapper">
           <i id="left" class="fa-solid fa-angle-left"></i>
@@ -256,9 +256,11 @@
       <!-- Title -->
       <div id="element-title" class="text-center mb-5">
         <h2 class="text-2xl font-bold pb-1">
-          Choose From Most Popular Restaurants
+          از مشهور ترین رستورانت ها انتخاب کنید
         </h2>
-        <p>Cum doctus civibus efficiantur in imperdiet deterruisset.</p>
+        <p>
+          لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
+        </p>
       </div>
       <!-- Card for Restaurant -->
       <div class="grid grid-cols-2 gap-5">
@@ -268,7 +270,7 @@
           <!-- image -->
           <div>
             <img
-              class="border ml-4"
+              class="border mr-4"
               src="/assets/images/Other Images/listing-logo18.png"
               alt=""
               width="100px"
@@ -276,7 +278,7 @@
             />
           </div>
           <!-- Rating star -->
-          <div class="pl-2 pt-4">
+          <div class="pr-4 pt-4">
             <div class="flex items-center">
               <svg
                 class="w-4 h-4 text-yellow-300 ms-1"
@@ -334,19 +336,17 @@
                 />
               </svg>
             </div>
-            <a href="#">
-              <h1 class="text-lg font-bold hover:text-red-600">
-                Restaurant Demo
-              </h1>
+            <a href="#" class="">
+              <h1 class="text-xl py-1 font-bold tracking-wider hover:text-red-600">دمو رستورانت</h1>
             </a>
-            <span>Type of food : Apple Juice</span>
+            <span><span class="font-bold">نوعیت غذا </span>: apple jouce</span>
           </div>
         </div>
         <!-- second Card -->
         <div class="flex bg-white h-44 pt-8 border">
           <div>
             <img
-              class="border ml-4"
+              class="border mr-4"
               src="/assets/images/Other Images/fb-restaurant-02.jpg "
               alt=""
               width="100px"
@@ -354,7 +354,7 @@
             />
           </div>
           <!-- Rating star -->
-          <div class="pl-7 pt-4">
+          <div class="pr-7 pt-4">
             <div class="flex items-center">
               <svg
                 class="w-4 h-4 text-yellow-300 ms-1"
@@ -413,12 +413,12 @@
               </svg>
             </div>
             <a href="#">
-              <h1 class="text-lg font-bold hover:text-red-500">
-                Classic Restaurant
+              <h1 class="text-lg py-1 tracking-wider font-bold hover:text-red-500">
+                رستورانت کلاسیک
               </h1>
             </a>
             <span
-              >Type of food : Chicken Roast, Chines Soup, Cold Coffee, Cold
+              ><span class="font-bold">نوعیت غذا </span> : Chicken Roast, Chines Soup, Cold Coffee, Cold
               Drink, Hot Dogs</span
             >
           </div>
@@ -430,36 +430,36 @@
       class="flex flex-col items-center justify-center h-80"
       style="background-color: #282c35"
     >
-      <div class="text-gray-500 font-bold text-2xl">
-        <h4>SUBSCRIBE TO OUR NEWSLETTER</h4>
+      <div class="text-gray-500 font-bold tracking-wider text-2xl">
+        <h4>مشترک شدن در خبرنامه ما</h4>
       </div>
       <!-- Sign up section -->
       <div class="flex w-1/2 h-12 justify-between mt-5 px-14">
         <input
-          class="w-3/4 h-full outline-none rounded pl-4"
+          class="w-3/4 h-full outline-none rounded pr-4"
           type="email"
-          placeholder="Enter Your Email Address..."
+          placeholder=" ایمیل آدرس  خود را وارد کنید..."
         />
         <button
           class="w-36 h-full text-white bg-red-500 border-red-500 hover:bg-red-800 rounded font-bold text-xl p-1"
         >
-          SIGN UP
+        وارد شدن
         </button>
       </div>
       <hr class="w-3/4 mt-10 text-white" />
       <!-- Copy Right Section -->
       <div class="copy-right mt-4 text-gray-300 text-sm">
         <p>
-          © 2024 FOODBAKERY. ALL RIGHTS RESERVED. DEVELOPED BY
+            © 2024 FOODBAKERY . کلیه حقوق محفوظ است .  توسعه یافته توسط 
           <a href="https://github.com/Ali-Sina-255" target="_blank"
-            ><span class="text-red-900 font-bold underline text-lg"
-              >Ali Sina</span
+            ><span class="text-red-900 font-bold underline px-1 text-lg"
+              > Ali Sina</span
             >
           </a>
-          <span class="text-white font-bold text-lg">/</span>
+          <span class="text-white font-bold text-lg px-1">/</span>
           <a href="https://github.com/Elyajan" target="_blank">
-            <span class="text-red-900 font-bold underline text-lg">
-              Anwar</span
+            <span class="text-red-900 font-bold px-1 underline text-lg">
+               Anwar </span
             ></a
           >
         </p>
