@@ -8,6 +8,9 @@
   font-style: normal;
   font-display: swap;
 }
+.display-none {
+  @apply hidden;
+}
 
 @tailwind base;
 @tailwind components;
