@@ -15,5 +15,8 @@ module.exports = {
       vazir: ["vazirmatn"],
     },
   },
-  plugins: [],
+  plugins: {
+    tailwindcss: {},
+    autoprefixer: {},
+  },
 };
