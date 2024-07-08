@@ -252,81 +252,80 @@
     </header>
     <!-- User Register -->
 
-    <div id="hero-register">
+    <div id="hero-register" class="flex justify-center items-center">
       <form
-        class="px-4 border max-w-3xl w-full my-20 inputs border-t-4 shadow-lg rounded"
-        style="height: 65vh; width: 60%; margin: auto"
+        class="px-4 border max-w-3xl w-full border-t-4 shadow-lg rounded md:bg-white bg-slate-400 bg-opacity-50"
       >
-        <div class="text-center bprder">
+        <div class="text-center">
           <h1 class="text-2xl font-bold mt-5">WELCOME TO FOOD ONLINE</h1>
-          <p class="text-gray-600">
-            Please fill this form to get yourself to onboarded in the foodOnline
+          <p class="md:text-gray-600 text-black">
+            Please fill this form to get yourself onboarded in the foodOnline
             marketplace.
           </p>
         </div>
-        <div class="flex" style="margin-bottom: 20px; column-gap: 20px">
-          <div class="w-1/2">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mb-5 px-5">
+          <div>
             <label for="first-name">First Name</label>
             <input
-              class="border mt-2 py-2 px-4 w-full focus:outline outline-none hover:border-gray-500 hover:border-b-4"
+              class="border mt-2 py-2 px-4 w-full focus:outline-none hover:border-gray-500 hover:border-b-4"
               type="text"
               name="first-name"
               id="first-name"
             />
           </div>
-          <div class="w-1/2">
+          <div>
             <label for="last-name">Last Name</label>
             <input
-              class="border mt-2 py-2 px-4 w-full focus:outline outline-none hover:border-gray-500 hover:border-b-4"
+              class="border mt-2 py-2 px-4 w-full focus:outline-none hover:border-gray-500 hover:border-b-4"
               type="text"
               name="last-name"
               id="last-name"
             />
           </div>
         </div>
-        <div class="flex" style="margin-bottom: 20px; column-gap: 20px">
-          <div class="w-1/2">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mb-5 px-5">
+          <div>
             <label for="email-address">Email Address</label>
             <input
-              class="border mt-2 py-2 px-4 w-full focus:outline outline-none hover:border-gray-500 hover:border-b-4"
+              class="border mt-2 py-2 px-4 w-full focus:outline-none hover:border-gray-500 hover:border-b-4"
               type="text"
               name="email-address"
               id="email-address"
             />
           </div>
-          <div class="w-1/2">
+          <div>
             <label for="User-name">Username</label>
             <input
-              class="border mt-2 py-2 px-4 w-full focus:outline outline-none hover:border-gray-500 hover:border-b-4"
+              class="border mt-2 py-2 px-4 w-full focus:outline-none hover:border-gray-500 hover:border-b-4"
               type="text"
               name="User-name"
               id="User-name"
             />
           </div>
         </div>
-        <div class="flex" style="margin-bottom: 20px; column-gap: 20px">
-          <div class="w-1/2">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mb-5 px-5">
+          <div>
             <label for="password">Password</label>
             <input
-              class="border mt-2 py-2 px-4 w-full focus:outline outline-none hover:border-gray-500 hover:border-b-4"
+              class="border mt-2 py-2 px-4 w-full focus:outline-none hover:border-gray-500 hover:border-b-4"
               type="password"
               name="password"
               id="password"
             />
           </div>
-          <div class="w-1/2">
+          <div>
             <label for="Con">Confirm Password</label>
             <input
-              class="border mt-2 py-2 px-4 w-full focus:outline outline-none hover:border-gray-500 hover:border-b-4"
+              class="border mt-2 py-2 px-4 w-full focus:outline-none hover:border-gray-500 hover:border-b-4"
               type="password"
               name="lastname"
               id="lastname"
             />
           </div>
         </div>
-        <div class="mx-10">
+        <div class="px-5 mb-5 ">
           <button
-            class="w-36 h-full text-white bg-red-500 border-red-500 hover:bg-red-800 rounded font-bold text-xl p-1"
+            class="w-full  text-center  text-white bg-red-500 border-red-500 hover:bg-red-800 rounded font-bold text-xl p-2"
           >
             Submit
           </button>
@@ -377,5 +376,6 @@
       </div>
     </footer>
     <script src="/assets/Js/responsive_codes.js"></script>
+    <script src="/assets/Js/darkMode.js"></script>
   </body>
 </html>

@@ -252,103 +252,102 @@
     </header>
     <!-- User Register -->
 
-    <div id="hero-register">
+    <div id="hero-register" class="flex justify-center items-center">
       <form
-        class="px-4 border max-w-3xl w-full my-10 input border-t-4 shadow-lg rounded"
-        style="height: 80vh; width: 60%; margin: auto"
+        class="px-4 border max-w-3xl w-full border-t-4 shadow-lg rounded bg-slate-300 bg-opacity-50 md:bg-white"
       >
-        <div class="text-center bprder">
-          <h1 class="text-2xl font-bold mt-5">PARTENER WITH FOODONLINE</h1>
+        <div class="text-center">
+          <h1 class="text-2xl font-bold mt-5">PARTNER WITH FOODONLINE</h1>
           <p class="text-gray-600">
-            Please fill this form to get yourself to onboarded in the foodOnline
+            Please fill this form to get yourself onboarded in the foodOnline
             marketplace.
           </p>
         </div>
-        <div class="flex" style="margin-bottom: 20px; column-gap: 20px">
-          <div class="w-1/2">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mb-5 px-5">
+          <div>
             <label for="first-name">First Name</label>
             <input
-              class="border mt-2 py-2 px-4 w-full focus:outline outline-none hover:border-gray-500 hover:border-b-4"
+              class="border mt-2 py-2 px-4 w-full focus:outline-none hover:border-gray-500 hover:border-b-4"
               type="text"
               name="first-name"
               id="first-name"
             />
           </div>
-          <div class="w-1/2">
+          <div>
             <label for="last-name">Last Name</label>
             <input
-              class="border mt-2 py-2 px-4 w-full focus:outline outline-none hover:border-gray-500 hover:border-b-4"
+              class="border mt-2 py-2 px-4 w-full focus:outline-none hover:border-gray-500 hover:border-b-4"
               type="text"
               name="last-name"
               id="last-name"
             />
           </div>
         </div>
-        <div class="flex" style="margin-bottom: 20px; column-gap: 20px">
-          <div class="w-1/2">
-            <label for="first-name">Restaurant Name</label>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mb-5 px-5">
+          <div>
+            <label for="restaurant-name">Restaurant Name</label>
             <input
-              class="border mt-2 py-2 px-4 w-full focus:outline outline-none hover:border-gray-500 hover:border-b-4"
+              class="border mt-2 py-2 px-4 w-full focus:outline-none hover:border-gray-500 hover:border-b-4"
               type="text"
-              name="first-name"
-              id="first-name"
+              name="restaurant-name"
+              id="restaurant-name"
             />
           </div>
-          <div class="w-1/2">
-            <label for="last-name">Restaurant License</label>
+          <div>
+            <label for="restaurant-license">Restaurant License</label>
             <input
-              class="border mt-2 py-2 px-4 w-full focus:outline outline-none hover:border-gray-500 hover:border-b-4"
+              class="border mt-2 py-2 px-4 w-full focus:outline-none hover:border-gray-500 hover:border-b-4"
               type="file"
-              name="last-name"
-              id="last-name"
+              name="restaurant-license"
+              id="restaurant-license"
               style="background-color: #5dc0de"
             />
           </div>
         </div>
-        <div class="flex" style="margin-bottom: 20px; column-gap: 20px">
-          <div class="w-1/2">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mb-5 px-5">
+          <div>
             <label for="email-address">Email Address</label>
             <input
-              class="border mt-2 py-2 px-4 w-full focus:outline outline-none hover:border-gray-500 hover:border-b-4"
+              class="border mt-2 py-2 px-4 w-full focus:outline-none hover:border-gray-500 hover:border-b-4"
               type="text"
               name="email-address"
               id="email-address"
             />
           </div>
-          <div class="w-1/2">
-            <label for="User-name">Username</label>
+          <div>
+            <label for="username">Username</label>
             <input
-              class="border mt-2 py-2 px-4 w-full focus:outline outline-none hover:border-gray-500 hover:border-b-4"
+              class="border mt-2 py-2 px-4 w-full focus:outline-none hover:border-gray-500 hover:border-b-4"
               type="text"
-              name="User-name"
-              id="User-name"
+              name="username"
+              id="username"
             />
           </div>
         </div>
-        <div class="flex" style="margin-bottom: 20px; column-gap: 20px">
-          <div class="w-1/2">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mb-5 px-5">
+          <div>
             <label for="password">Password</label>
             <input
-              class="border mt-2 py-2 px-4 w-full focus:outline outline-none hover:border-gray-500 hover:border-b-4"
+              class="border mt-2 py-2 px-4 w-full focus:outline-none hover:border-gray-500 hover:border-b-4"
               type="password"
               name="password"
               id="password"
             />
           </div>
-          <div class="w-1/2">
-            <label for="Con">Confirm Password</label>
+          <div>
+            <label for="confirm-password">Confirm Password</label>
             <input
-              class="border mt-2 py-2 px-4 w-full focus:outline outline-none hover:border-gray-500 hover:border-b-4"
+              class="border mt-2 py-2 px-4 w-full focus:outline-none hover:border-gray-500 hover:border-b-4"
               type="password"
-              name="lastname"
-              id="lastname"
+              name="confirm-password"
+              id="confirm-password"
             />
           </div>
         </div>
-        <div class="mx-10">
+        <div class="px-5 mb-5">
           <button
             type="submit"
-            class="w-36 h-full text-white bg-red-500 border-red-500 hover:bg-red-800 rounded font-bold text-xl p-1"
+            class="w-full md:w-36 h-full text-white bg-red-500 border-red-500 hover:bg-red-800 rounded font-bold text-xl p-2"
           >
             Submit
           </button>
@@ -399,5 +398,6 @@
       </div>
     </footer>
     <script src="/assets/Js/responsive_codes.js"></script>
+    <script src="/assets/Js/darkMode.js"></script>
   </body>
 </html>
