@@ -19,16 +19,13 @@
   background-image: url("/assets/images/res_dash.jpg");
   border-radius: 20px;
   width: 100%;
- 
+
   background-size: cover;
   background-repeat: no-repeat;
 }
 /* buyer section */
 #buyer_dashborad {
   background-image: url("/assets/images/buyer.jpg");
-  border-radius: 20px;
-  width: 100%;
-  height: 300px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

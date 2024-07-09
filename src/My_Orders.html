@@ -3,36 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/assets/css/main.css"/>
+    <link rel="stylesheet" href="/assets/css/main.css" />
     <link rel="stylesheet" href="/assets/css/style.css" />
     <link rel="stylesheet" href="/assets/css/slider_style.css" />
     <title>My Orders</title>
   </head>
   <body class="font-poppins" style="background-color: #ebedf3">
     <!-- hero section -->
-    <header id="buyer_dashborad" class="flex items-center shadow-md">
-      <div class="wrapper h-auto ml-36">
-        <div class="flex items-center">
+    <header id="buyer_dashborad" class="flex items-center shadow-md h-[300px]">
+      <div class="wrapper h-auto md:ml-36">
+        <div class="md:flex md:items-center">
           <!-- image -->
-          <div>
+          <div class="ml-36 md:ml-0">
             <img
-              class="border border-black ml-4"
+              class="border border-black w-[150px] h-[150px] ml-4 md:w-[200px] md:h-[200px]"
               src="/assets/images/buyer_image/images.png"
               alt=""
-              width="200px"
-              height="200px"
             />
           </div>
 
-          <div class="pl-10 pt-4">
+          <div class="pl-10 pt-4 text-center md:text-left">
             <!-- buyer Name -->
             <a href="#">
-              <h1 class="text-3xl font-bold hover:text-red-600 tracking-wide">Buyer Demo</h1>
+              <h1 class="text-3xl font-bold hover:text-red-600">Buyer Demo</h1>
             </a>
 
             <div class="mt-2">
               <!-- Buyer mobile -->
-              <div class="flex items-center">
+              <div class="flex items-center justify-center md:justify-start">
                 <svg
                   class="w-5 h-7"
                   xmlns="http://www.w3.org/2000/svg"
@@ -52,7 +50,9 @@
                 </p>
               </div>
               <!-- Buyer email -->
-              <div class="mt-1 flex items-center">
+              <div
+                class="mt-1 flex items-center justify-center md:justify-start"
+              >
                 <svg
                   class="w-5 h-7"
                   xmlns="http://www.w3.org/2000/svg"
@@ -77,13 +77,12 @@
       </div>
     </header>
     <!-- Main dashboard -->
-    <div class="flex gap-10 mb-10">
+    <div class="md:flex md:gap-5 lg:gap-10 mb-10 md:mb-40">
       <!-- Aside dashboard  -->
       <div
-        class="w-[25%] shadow-md border-t-4 ml-32 mt-16 mb-40 h-fit"
-        style="background-color: #fff"
+        class="md:w-[20%] lg:w-[25%] md:shadow-md md:border-t-4 md:bg-[#fff] md:ml-5 lg:ml-32 mt-6 md:mt-16 h-fit"
       >
-        <div class="flex items-center">
+        <div class="flex items-center bg-[#fff] mx-16 md:mx-0">
           <ul class="w-full h-auto">
             <!-- dashboard -->
             <li class="text-sm font-bold border-b-2">
@@ -104,8 +103,7 @@
                 <span class="text-red-500">DASHBOARD</span>
               </a>
             </li>
-           
-         
+
             <!-- --------MY ORDER------ -->
             <li class="text-sm font-bold border-b-2 hover:text-red-700">
               <a href="My_Orders.html" class="flex items-center py-2 px-4">
@@ -122,8 +120,7 @@
                 <span class=""> MY ORDER</span>
               </a>
             </li>
-         
-           
+
             <!-- ------ACCOUNTSETTING -->
             <li class="text-sm font-bold border-b-2 hover:text-red-700">
               <a
@@ -144,7 +141,7 @@
               </a>
             </li>
             <!-- -----DELETE PROFILE -->
-          
+
             <li class="text-sm font-bold border-b-2 hover:text-red-700">
               <a href="index.html" class="flex items-center py-2 px-4">
                 <svg
@@ -165,15 +162,15 @@
       </div>
       <!-- Suggested restaurant section -->
       <main
-        class="w-[80%] mt-16 mr-32 border-t-4 p-7 h-fit"
+        class="md:w-[80%] w-full mt-16 mr-32 border-t-4 p-7"
         style="background-color: #fff"
       >
         <!-- Orders heading -->
-        <div class="flex py-2 justify-between">
-          <div class="items-center">
+        <div class="md:flex py-2 justify-between">
+          <div class="md:items-center text-center md:text-start">
             <h1 class="font-bold text-lg">MY ORDERS</h1>
           </div>
-          <div class="flex gap-4">
+          <div class="flex justify-between mt-3 md:mt-0 gap-4">
             <select
               class="w-48 h-7 px-2 border rounded-md bg-[#ebedf3]"
               name=""
@@ -194,15 +191,15 @@
         <!-- Order Card--------------------------- -->
         <div class="w-full mt-8">
           <!-- First Row Card  -->
-          <div class="flex gap-8 mb-8">
+          <div class="md:flex gap-8 mb-8">
             <!-- First Card -->
-            <div class="border p-5 w-1/2">
+            <div class="border p-5 md:w-1/2">
               <div class="flex border-b justify-between pb-3">
                 <div class="flex">
                   <img
                     src="/assets/images/topRestaurant_img/image4.jpeg"
                     alt=""
-                    class=" w-[80px] h-[80px] mr-5"
+                    class="w-[80px] h-[80px] mr-5"
                   />
                   <div>
                     <a href="" class="hover:underline">
@@ -249,7 +246,7 @@
               </div>
             </div>
 
-            <div class="border p-5 w-1/2">
+            <div class="border p-5 md:w-1/2">
               <div class="flex border-b justify-between pb-3">
                 <div class="flex">
                   <img
@@ -366,9 +363,9 @@
             </div>
           </div>
           <!-- second Row Card -->
-          <div class="flex gap-8 mb-8">
+          <div class="md:flex gap-8 mb-8">
             <!-- First Card -->
-            <div class="border p-5 w-1/2">
+            <div class="border p-5 md:w-1/2">
               <div class="flex border-b justify-between pb-3">
                 <div class="flex">
                   <img
@@ -396,10 +393,10 @@
               <!-- Order Review -->
               <div class="flex gap-4 mt-2">
                 <a
-                href="#"
-                class="reviewModal text-sky-600 hover:underline animate-pulse"
-                >GIVE REVIEW</a>
-                
+                  href="#"
+                  class="reviewModal text-sky-600 hover:underline animate-pulse"
+                  >GIVE REVIEW</a
+                >
               </div>
               <!-- Order Date -->
               <div class="mt-2">
@@ -421,11 +418,11 @@
               </div>
             </div>
 
-            <div class="border p-5 w-1/2">
+            <div class="border p-5 md:w-1/2">
               <div class="flex border-b justify-between pb-3">
                 <div class="flex">
                   <img
-                  src="/assets/images/topRestaurant_img/image4.jpeg"
+                    src="/assets/images/topRestaurant_img/image4.jpeg"
                     alt=""
                     class="w-[80px] h-[80px] mr-5"
                   />
@@ -538,13 +535,13 @@
             </div>
           </div>
           <!-- Thirth Row Card -->
-          <div class="flex gap-8 mb-8">
+          <div class="md:flex gap-8 mb-8">
             <!-- First Card -->
-            <div class="border p-5 w-1/2">
+            <div class="border p-5 md:w-1/2">
               <div class="flex border-b justify-between pb-3">
                 <div class="flex">
                   <img
-                  src="/assets/images/topRestaurant_img/image4.jpeg"
+                    src="/assets/images/topRestaurant_img/image4.jpeg"
                     alt=""
                     class="w-[80px] h-[80px] mr-5"
                   />
@@ -655,8 +652,8 @@
                 </button>
               </div>
             </div>
-<!-- second Card -->
-            <div class="border p-5 w-1/2">
+            <!-- second Card -->
+            <div class="border p-5 md:w-1/2">
               <div class="flex border-b justify-between pb-3">
                 <div class="flex">
                   <img
@@ -774,22 +771,34 @@
           </div>
           <!--   next page Button-->
           <div class="flex w-fit h-10 border rounded-md text-blue-500">
-            <div class="w-10 h-10 border  border-gray-400 flex bg-sky-600 items-center justify-center hover:text-red-600 hover:bg-slate-300">
-              <a href="#" class="text-red-700 ">1</a>
+            <div
+              class="w-10 h-10 border border-gray-400 flex bg-sky-600 items-center justify-center hover:text-red-600 hover:bg-slate-300"
+            >
+              <a href="#" class="text-red-700">1</a>
             </div>
-            <div class="w-10 h-10 border border-gray-400 flex items-center justify-center hover:text-red-600 hover:bg-slate-300 ">
+            <div
+              class="w-10 h-10 border border-gray-400 flex items-center justify-center hover:text-red-600 hover:bg-slate-300"
+            >
               <a href="#">2</a>
             </div>
-            <div class="w-10 h-10 border border-gray-400 flex items-center justify-center hover:text-red-600 hover:bg-slate-300  ">
+            <div
+              class="w-10 h-10 border border-gray-400 flex items-center justify-center hover:text-red-600 hover:bg-slate-300"
+            >
               <a href="#">3</a>
             </div>
-            <div class="w-10 h-10 border border-gray-400 flex items-center justify-center hover:text-red-600 hover:bg-slate-300 ">
+            <div
+              class="w-10 h-10 border border-gray-400 flex items-center justify-center hover:text-red-600 hover:bg-slate-300"
+            >
               <a href="#">...</a>
             </div>
-            <div class="w-10 h-10 border border-gray-400 flex items-center justify-center hover:text-red-600 hover:bg-slate-300 ">
+            <div
+              class="w-10 h-10 border border-gray-400 flex items-center justify-center hover:text-red-600 hover:bg-slate-300"
+            >
               <a href="#">24</a>
             </div>
-            <div class="px-2 h-10 border border-gray-400 flex items-center justify-center hover:text-red-600 hover:bg-slate-300 ">
+            <div
+              class="px-2 h-10 border border-gray-400 flex items-center justify-center hover:text-red-600 hover:bg-slate-300"
+            >
               <a href="#">Next</a>
             </div>
           </div>
@@ -802,7 +811,7 @@
       class="fixed inset-0 bg-black bg-opacity-50 w-[100%] hidden"
     >
       <div
-        class="fixed top-5 rounded-md overflow-y-scroll left-[25%] right-[25%] h-screen bg-[#ffffff] w-[50%] shadow-xl"
+        class="fixed top-5 rounded-md overflow-y-scroll md:left-[25%] md:right-[25%] h-screen bg-[#ffffff] w-full md:w-[50%] shadow-xl"
       >
         <!-- Modal Header -->
         <div class="modal-header px-6 py-4 flex justify-between items-center">
@@ -829,8 +838,8 @@
           </div>
         </div>
         <!--  Modal Body-->
-        <div class="modal-body px-6 flex pt-5 border-t">
-          <div class="w-1/2">
+        <div class="modal-body px-6 md:flex pt-5 border-t">
+          <div class="md:w-1/2">
             <h2 class="font-bold mb-2">Restaurant Demo</h2>
             <ul>
               <li>
@@ -850,7 +859,9 @@
             </ul>
           </div>
 
-          <div>
+          <div
+            class="md:w-1/2 mt-3 md:mt-0 border-t-2 md:border-none pt-3 md:pt-0"
+          >
             <div>
               <h2 class="font-bold mb-2">Restaurant Demo</h2>
               <ul>
@@ -932,7 +943,7 @@
               </li>
             </ul>
             <div class="flex justify-between mt-8 border-t py-5">
-              <div class="w-3/4">
+              <div class="md:w-3/4 w-1/2">
                 <h1 class="text-lg font-bold">Order Total</h1>
               </div>
               <div>
@@ -963,7 +974,7 @@
       class="fixed inset-0 bg-black bg-opacity-50 w-[100%] hidden"
     >
       <div
-        class="fixed top-5 rounded-md px-6 overflow-y-scroll left-[25%] right-[25%] h-screen pb-10 bg-white w-[50%] shadow-xl"
+        class="fixed top-5 rounded-md px-6 overflow-y-scroll md:left-[25%] md:right-[25%] h-screen pb-10 bg-white md:w-[50%] w-[100%] shadow-xl"
       >
         <!-- Modal Header -->
         <div
@@ -995,7 +1006,7 @@
           <h1 class="font-bold text-lg">Rate And Write A Review</h1>
         </div>
         <!-- giving star reivew -->
-        <div class="flex border-b pb-3">
+        <div class="flex border-b w-full pb-3">
           <div class="w-1/2">
             <ul class="list-none">
               <!-- servise -->
@@ -1043,8 +1054,12 @@
                 </div>
               </li>
               <!-- Value -->
+            </ul>
+          </div>
+          <div class="w-1/2">
+            <ul class="list-none">
               <li class="items-center">
-                <span class="text-lg">Value</span>
+                <span class="text-lg">Over all reting</span>
                 <div class="stars flex">
                   <input
                     id="star-1"
@@ -1064,12 +1079,8 @@
                   <label class="star-5" for="star-5">★</label>
                 </div>
               </li>
-            </ul>
-          </div>
-          <div class="w-1/2">
-            <ul>
               <li class="items-center">
-                <span class="text-lg">Over all reting</span>
+                <span class="text-lg">Value</span>
                 <div class="stars flex">
                   <input
                     id="star-1"
@@ -1169,17 +1180,28 @@
             />
           </div>
         </div>
-        <div class="w-full mb-5 border ">
-          <textarea name="" id="" class="w-full focus:outline-none p-3 " rows="5" placeholder="Tell about your experiance or leave atip for other"></textarea>
+        <div class="w-full mb-5 border">
+          <textarea
+            name=""
+            id=""
+            class="w-full focus:outline-none p-3"
+            rows="5"
+            placeholder="Tell about your experiance or leave atip for other"
+          ></textarea>
+        </div>
+        <div class="flex justify-between text-lg">
+          <div><p>Min characters: 10</p></div>
+          <div><p>Max characters: 500</p></div>
+        </div>
+        <span>500 characters remaining</span>
+        <div class="mt-5 w-full rounded mb-7">
+          <button
+            class="w-full h-10 bg-red-700 text-white font-bold rounded-md"
+          >
+            SUBMIT YOUR REVIEW
+          </button>
+        </div>
       </div>
-      <div class="flex justify-between text-lg">
-        <div><p>Min characters: 10</p></div>
-        <div><p>Max characters: 500</p></div>
-      </div>
-      <span>500 characters remaining</span>
-     <div class="mt-5 w-full rounded mb-7">
-      <button class="w-full h-10 bg-red-700 text-white font-bold rounded-md">SUBMIT YOUR REVIEW</button>
-     </div>
     </div>
     <!-- Footer -->
     <footer
@@ -1190,22 +1212,24 @@
         <h4>SUBSCRIBE TO OUR NEWSLETTER</h4>
       </div>
       <!-- Sign up section -->
-      <div class="flex w-1/2 h-12 justify-between mt-5 px-14">
+      <div
+        class="flex flex-col h-22 md:flex-row w-full items-center md:justify-center md:gap-x-4 md:h-12 mt-5 md:px-14"
+      >
         <input
-          class="w-3/4 h-full outline-none rounded pl-4"
+          class="w-3/4 md:h-full h-12 md:w-1/3 mb-3 md:mb-0 outline-none rounded pl-4"
           type="email"
           placeholder="Enter Your Email Address..."
         />
         <button
-          class="w-36 h-full text-white bg-red-500 border-red-500 hover:bg-red-800 rounded font-bold text-xl p-1"
+          class="w-36 md:h-full text-white bg-red-500 border-red-500 hover:bg-red-800 rounded font-bold text-xl p-1"
         >
           SIGN UP
         </button>
       </div>
       <hr class="w-3/4 mt-10 text-white" />
       <!-- Copy Right Section -->
-      <div class="copy-right mt-4 text-gray-300 text-sm">
-        <p>
+      <div class="copy-right mt-4 mx-10 text-gray-300 text-sm">
+        <p class="text-center">
           © 2024 FOODBAKERY. ALL RIGHTS RESERVED. DEVELOPED BY
           <a href="https://github.com/Ali-Sina-255" target="_blank"
             ><span class="text-red-900 font-bold underline text-lg"

@@ -10,21 +10,19 @@
   </head>
   <body style="background-color: #ebedf3">
     <!-- hero section -->
-    <header id="buyer_dashborad" class="flex items-center shadow-md">
-      <div class="wrapper h-auto ml-36">
-        <div class="flex items-center">
+    <header id="buyer_dashborad" class="flex items-center shadow-md h-[300px]">
+      <div class="wrapper h-auto md:ml-36">
+        <div class="md:flex md:items-center">
           <!-- image -->
-          <div>
+          <div class="ml-36 md:ml-0">
             <img
-              class="border border-black ml-4"
+              class="border border-black w-[150px] h-[150px] ml-4 md:w-[200px] md:h-[200px]"
               src="/assets/images/buyer_image/images.png"
               alt=""
-              width="200px"
-              height="200px"
             />
           </div>
 
-          <div class="pl-10 pt-4">
+          <div class="pl-10 pt-4 text-center md:text-left">
             <!-- buyer Name -->
             <a href="#">
               <h1 class="text-3xl font-bold hover:text-red-600">Buyer Demo</h1>
@@ -32,7 +30,7 @@
 
             <div class="mt-2">
               <!-- Buyer mobile -->
-              <div class="flex items-center">
+              <div class="flex items-center justify-center md:justify-start">
                 <svg
                   class="w-5 h-7"
                   xmlns="http://www.w3.org/2000/svg"
@@ -52,7 +50,9 @@
                 </p>
               </div>
               <!-- Buyer email -->
-              <div class="mt-1 flex items-center">
+              <div
+                class="mt-1 flex items-center justify-center md:justify-start"
+              >
                 <svg
                   class="w-5 h-7"
                   xmlns="http://www.w3.org/2000/svg"
@@ -77,13 +77,12 @@
       </div>
     </header>
     <!-- Main dashboard -->
-    <div class="flex gap-10">
+    <div class="md:flex md:gap-5 lg:gap-10 mb-10 md:mb-40">
       <!-- Aside dashboard  -->
       <div
-        class="w-[25%] shadow-md border-t-4 ml-32 mt-16 mb-40 h-fit"
-        style="background-color: #fff"
+        class="md:w-[20%] lg:w-[25%] md:shadow-md md:border-t-4 md:bg-[#fff] md:ml-5 lg:ml-32 mt-6 md:mt-16 h-fit"
       >
-        <div class="flex items-center">
+        <div class="flex items-center bg-[#fff] mx-16 md:mx-0">
           <ul class="w-full h-auto">
             <!-- dashboard -->
             <li class="text-sm font-bold border-b-2">
@@ -163,9 +162,10 @@
       </div>
       <!-- Suggested restaurant section -->
       <main
-        class="w-[80%] mt-16 mr-32 border-t-4 p-7"
+        class="md:w-[80%] w-full mt-16 mr-32 border-t-4 p-7"
         style="background-color: #fff"
       >
+        <!-- Welcome section -->
         <div id="user_holder" class="border text-white h-52 bg-blue-500">
           <div class="px-10 pt-12">
             <div class="text-2xl font-bold flex justify-between">
@@ -211,16 +211,16 @@
               to search for specific</span
             >
           </div>
-          <ul class="mt-10 mx-5">
+          <ul class="mt-10 md:mx-5">
             <!-- Suggeisted reataureant items -->
             <li class="border-b pb-10">
-              <div class="flex items-center">
+              <div class="flex flex-col md:flex-row items-center">
                 <!-- food image -->
                 <div class="image-list w-[150px] h-[100px] mr-5">
                   <img src="/assets/images/Other Images/fb-restaurant-02.jpg" />
                 </div>
                 <!-- food details -->
-                <div class="w-full">
+                <div class="w-full mt-10 md:mt-0">
                   <!-- Type pf ffod -->
                   <div>
                     <h1 class="font-bold">Dragon Express</h1>
@@ -279,7 +279,9 @@
                   </div>
                 </div>
                 <!-- review icon and button -->
-                <div class="flex items-center justify-center gap-3 w-60">
+                <div
+                  class="flex items-center justify-center mt-8 md:mt-0 gap-3 w-60"
+                >
                   <a href="" class="border p-1">
                     <svg
                       class="w-7 h-7 text-green-500"
@@ -305,14 +307,14 @@
                 </div>
               </div>
             </li>
-            <li class="border-b py-10">
-              <div class="flex items-center">
+            <li class="border-b pb-10 mt-5 md:mt-0">
+              <div class="flex flex-col md:flex-row items-center">
                 <!-- food image -->
                 <div class="image-list w-[150px] h-[100px] mr-5">
-                  <img src="/assets/images/Other Images/listing-logo18.png" />
+                  <img src="/assets/images/Other Images/fb-restaurant-02.jpg" />
                 </div>
                 <!-- food details -->
-                <div class="w-full">
+                <div class="w-full mt-10 md:mt-0">
                   <!-- Type pf ffod -->
                   <div>
                     <h1 class="font-bold">Dragon Express</h1>
@@ -338,12 +340,7 @@
                             ></path>
                           </svg>
                         </span>
-                        <div>
-                          <b>
-                            Delivery time Your order will be delivered in 10
-                            minutes.
-                          </b>
-                        </div>
+                        <div><b>Delivary time 10</b></div>
                       </div>
                       <!-- Clock icon -->
                       <div>
@@ -365,9 +362,7 @@
                           </svg>
                         </span>
                         <div>
-                          <b
-                            >Pickup time You can pickup order in 15 minutes.
-                          </b>
+                          <b>Pikup time 10</b>
                           <address>
                             kabul - 6 district - barchi Lorem ipsum dolor sit
                             amet consectetur adipisicing elit.
@@ -378,7 +373,9 @@
                   </div>
                 </div>
                 <!-- review icon and button -->
-                <div class="flex items-center justify-center gap-3 w-60">
+                <div
+                  class="flex items-center justify-center mt-8 md:mt-0 gap-3 w-60"
+                >
                   <a href="" class="border p-1">
                     <svg
                       class="w-7 h-7 text-green-500"
@@ -404,14 +401,14 @@
                 </div>
               </div>
             </li>
-            <li class="border-b py-10">
-              <div class="flex items-center">
+            <li class="border-b pb-10 mt-5 md:mt-0">
+              <div class="flex flex-col md:flex-row items-center">
                 <!-- food image -->
                 <div class="image-list w-[150px] h-[100px] mr-5">
-                  <img src="/assets/images/topRestaurant_img/image2.jfif" />
+                  <img src="/assets/images/Other Images/fb-restaurant-02.jpg" />
                 </div>
                 <!-- food details -->
-                <div class="w-full">
+                <div class="w-full mt-10 md:mt-0">
                   <!-- Type pf ffod -->
                   <div>
                     <h1 class="font-bold">Dragon Express</h1>
@@ -425,7 +422,6 @@
                     <div class="">
                       <!-- bike icon ----------------------- -->
                       <div href="#" class="mr-5">
-                        <!-- ----------- -->
                         <span>
                           <svg
                             class="bg-gray-400 w-6 h-6 rounded-[50%] p-1 text-white hover:text-red-600"
@@ -438,12 +434,7 @@
                             ></path>
                           </svg>
                         </span>
-                        <div>
-                          <b>
-                            Delivery time Your order will be delivered in 10
-                            minutes.</b
-                          >
-                        </div>
+                        <div><b>Delivary time 10</b></div>
                       </div>
                       <!-- Clock icon -->
                       <div>
@@ -465,7 +456,7 @@
                           </svg>
                         </span>
                         <div>
-                          <b>Pickup time You can pickup order in 15 minutes.</b>
+                          <b>Pikup time 10</b>
                           <address>
                             kabul - 6 district - barchi Lorem ipsum dolor sit
                             amet consectetur adipisicing elit.
@@ -476,7 +467,9 @@
                   </div>
                 </div>
                 <!-- review icon and button -->
-                <div class="flex items-center justify-center gap-3 w-60">
+                <div
+                  class="flex items-center justify-center mt-8 md:mt-0 gap-3 w-60"
+                >
                   <a href="" class="border p-1">
                     <svg
                       class="w-7 h-7 text-green-500"
@@ -515,22 +508,24 @@
         <h4>SUBSCRIBE TO OUR NEWSLETTER</h4>
       </div>
       <!-- Sign up section -->
-      <div class="flex w-1/2 h-12 justify-between mt-5 px-14">
+      <div
+        class="flex flex-col h-22 md:flex-row w-full items-center md:justify-center md:gap-x-4 md:h-12 mt-5 md:px-14"
+      >
         <input
-          class="w-3/4 h-full outline-none rounded pl-4"
+          class="w-3/4 md:h-full h-12 md:w-1/3 mb-3 md:mb-0 outline-none rounded pl-4"
           type="email"
           placeholder="Enter Your Email Address..."
         />
         <button
-          class="w-36 h-full text-white bg-red-500 border-red-500 hover:bg-red-800 rounded font-bold text-xl p-1"
+          class="w-36 md:h-full text-white bg-red-500 border-red-500 hover:bg-red-800 rounded font-bold text-xl p-1"
         >
           SIGN UP
         </button>
       </div>
       <hr class="w-3/4 mt-10 text-white" />
       <!-- Copy Right Section -->
-      <div class="copy-right mt-4 text-gray-300 text-sm">
-        <p>
+      <div class="copy-right mt-4 mx-10 text-gray-300 text-sm">
+        <p class="text-center">
           © 2024 FOODBAKERY. ALL RIGHTS RESERVED. DEVELOPED BY
           <a href="https://github.com/Ali-Sina-255" target="_blank"
             ><span class="text-red-900 font-bold underline text-lg"
