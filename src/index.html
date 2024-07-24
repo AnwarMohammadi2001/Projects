@@ -23,7 +23,7 @@
     />
     <title>Multi Vendore Restaurant</title>
   </head>
-  <body class="font-poppins">
+  <body class="font-poppins" style="background-color: #ebedf3">
     <!--Navbar section-->
     <header
       class="bg-gradient-to-r from-[#fbbf24] from-5% via-[#fb923c] w-full via-20% to-[#fbbf24] to-80% drop-shadow-lg"
@@ -217,17 +217,17 @@
         background-image: url('/assets/images/bg-image1.jpg');
         height: 85vh;
       "
-      class="w-full flex items-center justify-center flex-col bg-cover"
+      class="w-full flex px-5 md:px-0 items-center justify-center flex-col bg-cover"
     >
       <!-- main title -->
       <div class="flex justify-center items-center">
-        <h1 class="text-center text-black sm:text-2xl text-3xl font-bold">
+        <h1 class="text-center text-black sm:text-3xl  text-3xl font-bold">
           We Are In The Business Of Food<br />
           Our Restaurants Do
         </h1>
       </div>
       <div
-        class="flex justify-center text-center mb-3 items-center p-3 text-lg"
+        class="flex justify-center text-center mb-3 items-center p-3 text-xl"
       >
         <h3>
           Ridiculus sociosqu cursus neque cursus curae ante scelerisque
@@ -236,19 +236,19 @@
       </div>
       <!-- Main Search  -->
       <div
-        class="flex flex-col bg-red-500 gap-1 w-[80%] rounded p-1 md:flex-row md:gap-3 md:w-[50%] md:rounded md:h-14"
+        class="flex flex-col  gap-1 w-[80%]  rounded p-1 md:flex-row md:gap-3 md:w-[50%] md:rounded md:h-14"
       >
         <!-- Name Searcher -->
         <div class="flex-1 mb-3 md:mb-0 md:mr-3">
           <input
-            class="w-full outline-none md:h-full h-10 pl-3 placeholder-gray-500 placeholder-opacity-50"
+            class="w-full shadow-lg bg-gray-200 rounded-lg outline-none md:h-full h-10 md:8 pl-3 placeholder-gray-500 placeholder-opacity-50"
             type="text"
             placeholder="RESTAURANT NAME"
           />
         </div>
 
         <!-- Location Searcher -->
-        <div class="flex-1 relative items-center mb-3 md:mb-0 md:mr-3">
+        <div class="flex-1 relative  items-center mb-3 md:mb-0 md:mr-3">
           <label for="focus" class="absolute top-2 md:top-3 right-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -271,24 +271,26 @@
             </svg>
           </label>
           <input
-            class="w-full md:h-full h-10 outline-none pl-3 placeholder-gray-500 placeholder-opacity-50"
+            class="w-full md:h-full shadow-lg bg-gray-200 rounded-md h-10  outline-none pl-3 placeholder-gray-500 placeholder-opacity-50"
             type="text"
             placeholder="ALL LOCATION"
           />
         </div>
 
         <!-- Button -->
-        <div class="">
+        <div class="flex justify-center md:flex-none">
           <button
-            class="w-full md:h-full md:px-6 h-10 bg-green-500 rounded text-white hover:bg-green-800"
+            class="px-10 md:h-full md:px-8 md:w-full rounded-md h-10 bg-gradient-to-r from-[#fbbf24] to-[#fb923c]"
           >
-            SEARCH
+          <svg class="hover:animate-ping" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+          </svg>
           </button>
         </div>
       </div>
     </section>
     <!-- Top restaurnat  -->
-    <section class="" id="top_wrapper_restaurant">
+    <section class="pt-6 md:pt-10" id="top_wrapper_restaurant">
       <!-- name -->
       <h1>TOP RESTAUANT</h1>
       <p>Explore restaurants, bars, and cafés by locality</p>
@@ -378,7 +380,7 @@
       <div class="md:grid md:grid-cols-2 gap-4">
         <!-- inside Card -->
         <!-- first card -->
-        <div class="flex mb-5 bg-white h-44 pt-8 border">
+        <div class="flex mb-5 shadow-lg bg-white h-44 pt-8 border">
           <!-- image -->
           <div>
             <img
@@ -457,7 +459,7 @@
           </div>
         </div>
         <!-- second Card -->
-        <div class="flex bg-white h-44 pt-8 border">
+        <div class="flex shadow-lg bg-white h-44 pt-8 border">
           <div>
             <img
               class="border ml-4"
@@ -540,12 +542,8 @@
       </div>
     </section>
     <!-- Footer -->
-    <div class="">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#282c35" fill-opacity="1" d="M0,192L120,202.7C240,213,480,235,720,229.3C960,224,1200,192,1320,176L1440,160L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path></svg>
-      </svg>
-    </div>
     <footer
-      class="flex flex-col items-center justify-center  pb-10"
+      class="flex flex-col items-center pt-10 justify-center  pb-10"
       style="background-color: #282c35"
     >
       <div class="text-gray-500 font-bold text-2xl">
@@ -561,7 +559,7 @@
           placeholder="Enter Your Email Address..."
         />
         <button
-          class="w-36 md:h-full text-white bg-red-500 border-red-500 hover:bg-red-800 rounded font-bold text-xl p-1"
+          class="w-36 md:h-full rounded text-white font-bold hover:bg-white hover:text-black bg-red-700 font-boldfont-bold text-xl p-1"
         >
           SIGN UP
         </button>
