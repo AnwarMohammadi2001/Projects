@@ -23,9 +23,11 @@
     />
     <title>Multi Vendore Restaurant</title>
   </head>
-  <body class="">
+  <body class="font-poppins">
     <!--Navbar section-->
-    <header class="bg-slate-50 drop-shadow-lg">
+    <header
+      class="bg-gradient-to-r from-[#fbbf24] from-5% via-[#fb923c] w-full via-20% to-[#fbbf24] to-80% drop-shadow-lg"
+    >
       <nav
         class="flex items-center justify-between flex-wrap bg-white-500 h-20 px-5"
       >
@@ -40,7 +42,7 @@
           </a>
           <!-- Search Box -->
           <div
-            class="hidden lg:flex items-center w-72 h-11 relative ml-3 font-light rounded"
+            class="hidden lg:flex items-center w-72 h-11 rounded-md relative ml-3 font-light"
           >
             <label for="focus" class="absolute right-3">
               <svg
@@ -64,7 +66,7 @@
               </svg>
             </label>
             <input
-              class="w-full p-2 border-2 border-black"
+              class="w-full rounded-lg p-2 outline-none border-black"
               type="text"
               id="focus"
               placeholder="Enter your delivery location"
@@ -75,7 +77,7 @@
         <div class="hidden lg:flex items-center">
           <a href="card.html" class="hover:text-red-800 mr-6">
             <svg
-              class="w-10 h-8 text-red-500"
+              class="w-10 h-8 text-red-700"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
               fill="currentColor"
@@ -88,7 +90,7 @@
           <button>
             <a
               href="marketplace.html"
-              class="inline-block text-sm px-4 py-2 border rounded text-white bg-red-500 border-red-500 hover:bg-red-800 font-bold lg:mt-0"
+              class="inline-block text-sm px-4 py-2 rounded text-white hover:bg-white hover:text-black bg-red-700 font-bold lg:mt-0"
               >MARKETPLACE</a
             >
           </button>
@@ -99,7 +101,7 @@
           <button>
             <a
               href="restaurant_register.html"
-              class="inline-block text-sm px-4 py-2 border rounded text-white bg-red-500 border-red-500 hover:bg-red-800 font-bold lg:mt-0"
+              class="inline-block text-sm px-4 py-2 rounded text-white hover:bg-white hover:text-black bg-red-700 font-bold lg:mt-0"
               >REGISTER RESTAURANT</a
             >
           </button>
@@ -141,12 +143,12 @@
         </div>
       </nav>
       <!-- Mobile and Tablet menu -->
-      <div class="mobile-menu hidden lg:hidden">
+      <div class="mobile-menu pb-8 hidden lg:hidden">
         <ul class="space-y-3 mt-4 px-5">
           <!-- serach box -->
-          <li>
+          <li class="flex mb-7">
             <div
-              class="flex items-center w-full h-11 relative font-light rounded"
+              class="flex mr-8 items-center w-full h-11 relative font-light rounded"
             >
               <label for="focus" class="absolute right-3">
                 <svg
@@ -170,69 +172,40 @@
                 </svg>
               </label>
               <input
-                class="w-full p-2 sm:text-lg md:text-lg text-sm border-2 border-black"
+                class=" p-2  w-full sm:text-lg outline-none rounded-lg md:text-lg text-sm "
                 type="text"
                 id="focus"
                 placeholder="Enter your delivery location"
               />
             </div>
+           <button class="   text-sm px-4 rounded text-white hover:bg-white hover:text-black bg-red-700 font-bold py-1">
+            <a
+            href="login.html"
+            class="cursor-pointer  w-auto text-center "
+            >LOGIN</a>
+           </button>
           </li>
           <!-- market place -->
           <li class="w-full">
             <a
               href="marketplace.html"
-              class="block bg-red-700 text-white font-bold hover:bg-red-800 border-2 py-1.5 mx-6 text-center"
+              class="block text-white font-bold rounded-md hover:bg-white hover:text-black  text-sm bg-red-700  py-1.5 mx-32 text-center"
               >MARKETPLACE</a
             >
           </li>
           <li class="w-full">
-            <label class="font-bold text-1xl flex justify-evenly mx-6">
-              <a
-                href="login.html"
-                class="cursor-pointer border py-1.5 w-auto text-center px-3"
-                >LOGIN</a
-              >
-              <a
-                href="User_Register.html"
-                class="cursor-pointer border py-1.5 w-auto text-center px-3"
-                >REGISTER</a
-              >
-            </label>
+            <a
+            href="User_Register.html"
+            class="cursor-pointer block  text-white rounded-md hover:bg-white hover:text-black  text-sm bg-red-700 font-bold  py-1.5 text-center mx-32"
+            >REGISTER</a
+          >
           </li>
           <li class="w-full">
             <a
               href="restaurant_register.html"
-              class="block bg-red-700 text-white font-bold hover:bg-red-800 border-2 py-1.5 mx-6 text-center"
+              class="block text-sm text-white rounded-md hover:bg-white hover:text-black bg-red-700  py-1.5 font-bold mx-32 text-center"
               >REGISTER RESTAURANT</a
             >
-          </li>
-          <li class="flex items-center">
-            <div class="moon cursor-pointer">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-                class="size-6"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M9.528 1.718a.75.75 0 0 1 .162.819A8.97 8.97 0 0 0 9 6a9 9 0 0 0 9 9 8.97 8.97 0 0 0 3.463-.69.75.75 0 0 1 .981.98 10.503 10.503 0 0 1-9.694 6.46c-5.799 0-10.5-4.7-10.5-10.5 0-4.368 2.667-8.112 6.46-9.694a.75.75 0 0 1 .818.162Z"
-                  clip-rule="evenodd"
-                />
-              </svg>
-            </div>
-            <div class="sun cursor-pointer dark:text-white">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-                class="size-6"
-              >
-                <path
-                  d="M12 2.25a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-1.5 0V3a.75.75 0 0 1 .75-.75ZM7.5 12a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM18.894 6.166a.75.75 0 0 0-1.06-1.06l-1.591 1.59a.75.75 0 1 0 1.06 1.061l1.591-1.59ZM21.75 12a.75.75 0 0 1-.75.75h-2.25a.75.75 0 0 1 0-1.5H21a.75.75 0 0 1 .75.75ZM17.834 18.894a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 1 0-1.061 1.06l1.59 1.591ZM12 18a.75.75 0 0 1 .75.75V21a.75.75 0 0 1-1.5 0v-2.25A.75.75 0 0 1 12 18ZM7.758 17.303a.75.75 0 0 0-1.061-1.06l-1.591 1.59a.75.75 0 0 0 1.06 1.061l1.591-1.59ZM6 12a.75.75 0 0 1-.75.75H3a.75.75 0 0 1 0-1.5h2.25A.75.75 0 0 1 6 12ZM6.697 7.757a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 0 0-1.061 1.06l1.59 1.591Z"
-                />
-              </svg>
-            </div>
           </li>
         </ul>
       </div>
@@ -390,7 +363,7 @@
     </section>
     <!-- Popular Restaurant ------------------------------------------- -->
     <section
-      class="md:h-80 md:mx-24 mx-10 mb-6 border-t-2 md:border-t-0 md:mt-10"
+      class="md:h-72 md:mx-24 mx-10  border-t-2 md:border-t-0 md:mt-10"
     >
       <!-- Title -->
       <div id="element-title" class="text-center mb-5">
@@ -567,8 +540,12 @@
       </div>
     </section>
     <!-- Footer -->
+    <div class="">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#282c35" fill-opacity="1" d="M0,192L120,202.7C240,213,480,235,720,229.3C960,224,1200,192,1320,176L1440,160L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path></svg>
+      </svg>
+    </div>
     <footer
-      class="flex flex-col items-center justify-center h-80"
+      class="flex flex-col items-center justify-center  pb-10"
       style="background-color: #282c35"
     >
       <div class="text-gray-500 font-bold text-2xl">
