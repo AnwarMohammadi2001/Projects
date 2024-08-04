@@ -990,6 +990,10 @@ video {
   height: 100vh;
 }
 
+.h-28{
+  height: 7rem;
+}
+
 .w-1\/2{
   width: 50%;
 }
@@ -1121,6 +1125,14 @@ video {
 
 .w-full{
   width: 100%;
+}
+
+.w-0{
+  width: 0px;
+}
+
+.w-28{
+  width: 7rem;
 }
 
 .min-w-\[700px\]{
