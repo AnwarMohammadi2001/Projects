@@ -49,8 +49,8 @@
 .stars label:focus ~ label {
   color: #fbbf24; 
 } */
-
-.listing .restaurant-status {
+/*Restaurant Status*/
+.restaurant-status {
   position: absolute;
   top: 15px;
   left: -11px;
@@ -65,7 +65,7 @@
   min-width: 52px;
   text-align: center;
 }
-.img-holder .restaurant-status {
+.simple ul li .img-holder .restaurant-status {
   left: -10px;
 }
 .restaurant-status:before {

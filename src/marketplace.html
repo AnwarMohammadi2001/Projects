@@ -206,13 +206,7 @@
         <h1 class="text-2xl font-bold">15 Restaurants Found</h1>
         <div class="relative flex bg-white h-40 pt-8 my-6 md:w-[90%]">
           <!-- Opening and Closing Times -->
-          <div class="absolute top-0 text-green-500 left-0">
-            <div
-              class="absolute top-0 left-0 bg-red-500 text-white text-xs font-bold px-3 py-1 rounded-tr-md rounded-bl-md"
-            >
-              CLOSE
-            </div>
-          </div>
+
           <!-- Image -->
           <div class="w-[20%]">
             <div class="img-holder">
@@ -227,6 +221,11 @@
                   />
                 </a>
               </figure>
+
+              <span
+                class="restaurant-status close absolute -left-2 text-white flex text-sm px-2 before:border-t-2 top-2 bg-[#ed1b24]"
+                ><em class="bookmarkRibbon"></em>Close</span
+              >
             </div>
           </div>
           <!-- Rating star -->
