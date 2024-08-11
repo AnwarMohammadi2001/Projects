@@ -44,32 +44,11 @@
           <div
             class="hidden lg:flex items-center w-72 h-11 rounded-md relative ml-3 font-light"
           >
-            <label for="focus" class="absolute right-3">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="w-6 h-6"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
-                />
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
-                />
-              </svg>
-            </label>
             <input
               class="w-full rounded-lg p-2 outline-none border-black"
               type="text"
               id="focus"
-              placeholder="Enter your delivery location"
+              placeholder="Search Your Favorite Restaurant"
             />
           </div>
         </div>
@@ -183,32 +162,11 @@
             <div
               class="flex mr-8 items-center w-full h-11 relative font-light rounded"
             >
-              <label for="focus" class="absolute right-3">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="w-6 h-6"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
-                  />
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
-                  />
-                </svg>
-              </label>
               <input
                 class="p-2 w-full sm:text-lg outline-none rounded-lg md:text-lg text-sm"
                 type="text"
                 id="focus"
-                placeholder="Enter your delivery location"
+                placeholder="Search Your Favorite Restaurant"
               />
             </div>
             <button
@@ -270,7 +228,7 @@
       </div>
       <!-- Main Search  -->
       <div
-        class="flex flex-col gap-1 w-[80%] rounded p-1 md:flex-row md:gap-3 md:w-[50%] md:rounded md:h-14"
+        class="flex flex-col gap-1 w-[80%] rounded p-1 md:flex-row md:gap-3 md:w-[40%] md:rounded md:h-14"
       >
         <!-- Name Searcher -->
         <div class="flex-1 mb-3 md:mb-0 md:mr-3">
@@ -281,40 +239,10 @@
           />
         </div>
 
-        <!-- Location Searcher -->
-        <div class="flex-1 relative items-center mb-3 md:mb-0 md:mr-3">
-          <label for="focus" class="absolute top-2 md:top-3 right-2">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="w-6 h-6 text-gray-400"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
-              />
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
-              />
-            </svg>
-          </label>
-          <input
-            class="w-full md:h-full shadow-lg bg-gray-200 rounded-md h-10 outline-none pl-3 placeholder-gray-500 placeholder-opacity-50"
-            type="text"
-            placeholder="ALL LOCATION"
-          />
-        </div>
-
         <!-- Button -->
         <div class="flex justify-center md:flex-none">
           <button
-            class="px-10 md:h-full md:px-8 md:w-full rounded-md h-10 bg-gradient-to-r from-[#fbbf24] to-[#fb923c]"
+            class="px-10 md:h-full md:px-10 md:w-full rounded-md h-10 bg-gradient-to-r from-[#fbbf24] to-[#fb923c]"
           >
             <svg
               class="hover:animate-ping"
@@ -408,9 +336,9 @@
       </div>
     </section>
     <!-- Popular Restaurant ------------------------------------------- -->
-    <section class="md:h-72 md:mx-24 mx-10 border-t-2 md:border-t-0 md:mt-10">
+    <section class="md:mx-24 mx-10 border-t-2 md:border-t-0 md:mt-10 pb-10">
       <!-- Title -->
-      <div id="element-title" class="text-center mb-5">
+      <div id="element-title" class="text-center mb-10">
         <h2 class="md:text-2xl text-xl font-bold pb-1 pt-3">
           Choose From Most Popular Restaurants
         </h2>
@@ -419,168 +347,173 @@
         </p>
       </div>
       <!-- Card for Restaurant -->
-      <div class="md:grid md:grid-cols-2 gap-4">
-        <!-- inside Card -->
-        <!-- first card -->
-        <div class="flex mb-5 shadow-lg bg-white h-44 pt-8 border">
-          <!-- image -->
-          <div>
-            <img
-              class="border ml-4"
-              src="/assets/images/Other Images/listing-logo18.png"
-              alt=""
-              width="100px"
-              height="100px"
-            />
-          </div>
-          <!-- Rating star -->
-          <div class="pl-2 pt-4">
-            <div class="flex items-center">
-              <svg
-                class="w-4 h-4 text-yellow-300 ms-1"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="currentColor"
-                viewBox="0 0 22 20"
-              >
-                <path
-                  d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
-                />
-              </svg>
-              <svg
-                class="w-4 h-4 text-yellow-300 ms-1"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="currentColor"
-                viewBox="0 0 22 20"
-              >
-                <path
-                  d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
-                />
-              </svg>
-              <svg
-                class="w-4 h-4 text-yellow-300 ms-1"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="currentColor"
-                viewBox="0 0 22 20"
-              >
-                <path
-                  d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
-                />
-              </svg>
-              <svg
-                class="w-4 h-4 text-yellow-300 ms-1"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="currentColor"
-                viewBox="0 0 22 20"
-              >
-                <path
-                  d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
-                />
-              </svg>
-              <svg
-                class="w-4 h-4 ms-1 text-gray-300 dark:text-gray-500"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="currentColor"
-                viewBox="0 0 22 20"
-              >
-                <path
-                  d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
-                />
-              </svg>
-            </div>
-            <a href="#">
-              <h1 class="text-lg font-bold hover:text-red-600">
-                Restaurant Demo
-              </h1>
-            </a>
-            <span>Type of food : Apple Juice</span>
-          </div>
-        </div>
-        <!-- second Card -->
-        <div class="flex shadow-lg bg-white h-44 pt-8 border">
-          <div>
-            <img
-              class="border ml-4"
-              src="/assets/images/Other Images/fb-restaurant-02.jpg "
-              alt=""
-              width="100px"
-              height="100px"
-            />
-          </div>
-          <!-- Rating star -->
-          <div class="pl-7 pt-4">
-            <div class="flex items-center">
-              <svg
-                class="w-4 h-4 text-yellow-300 ms-1"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="currentColor"
-                viewBox="0 0 22 20"
-              >
-                <path
-                  d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
-                />
-              </svg>
-              <svg
-                class="w-4 h-4 text-yellow-300 ms-1"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="currentColor"
-                viewBox="0 0 22 20"
-              >
-                <path
-                  d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
-                />
-              </svg>
-              <svg
-                class="w-4 h-4 text-yellow-300 ms-1"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="currentColor"
-                viewBox="0 0 22 20"
-              >
-                <path
-                  d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
-                />
-              </svg>
-              <svg
-                class="w-4 h-4 text-yellow-300 ms-1"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="currentColor"
-                viewBox="0 0 22 20"
-              >
-                <path
-                  d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
-                />
-              </svg>
-              <svg
-                class="w-4 h-4 ms-1 text-gray-300 dark:text-gray-500"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="currentColor"
-                viewBox="0 0 22 20"
-              >
-                <path
-                  d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
-                />
-              </svg>
-            </div>
-            <a href="#">
-              <h1 class="text-lg font-bold hover:text-red-500">
-                Classic Restaurant
-              </h1>
-            </a>
-            <span
-              >Type of food : Chicken Roast, Chines Soup, Cold Coffee, Cold
-              Drink, Hot Dogs</span
+      <div class="">
+        <ul class="w-full gap-x-10 items-center justify-evenly flex flex-wrap">
+          <li class="flex lg:w-[48%] w-full mt-5">
+            <div
+              class="relative flex bg-white w-full shadow-md items-center h-44 px-7 rounded-md"
             >
-          </div>
-        </div>
+              <!-- Image -->
+              <div class="w-[20%]">
+                <div class="img-holder">
+                  <figure>
+                    <a href="#">
+                      <img
+                        src="/assets/images/Other Images/listing-logo18.png"
+                        width="100px"
+                        height="100px"
+                        class="img-list wp-post-image"
+                        alt=""
+                      />
+                    </a>
+                  </figure>
+                  <span
+                    class="restaurant-status close absolute -left-2 text-white flex text-sm px-2 before:border-t-2 top-2 bg-[#ed1b24]"
+                    ><em class="bookmarkRibbon"></em>Close</span
+                  >
+                </div>
+              </div>
+              <!-- Rating star -->
+              <div class="pl-3 pt-4 w-[50%]">
+                <a href="#">
+                  <h1 class="text-lg font-bold pl-1 hover:text-red-600">
+                    Restaurant Demo
+                  </h1>
+                </a>
+
+                <div class="flex items-center gap-x-2 justify-start mt-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+                    />
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
+                    />
+                  </svg>
+                  <p class="inline-block">
+                    <a href="#">Barchi , kabul , Afghanistan</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="flex lg:w-[48%] w-full mt-5">
+            <div
+              class="relative flex bg-white w-full shadow-md items-center h-44 px-7 rounded-md"
+            >
+              <!-- Image -->
+              <div class="w-[20%]">
+                <div class="img-holder">
+                  <figure>
+                    <a href="#">
+                      <img
+                        src="/assets/images/Other Images/listing-logo18.png"
+                        width="100px"
+                        height="100px"
+                        class="img-list wp-post-image"
+                        alt=""
+                      />
+                    </a>
+                  </figure>
+                  <span
+                    class="restaurant-status close absolute -left-2 text-white flex text-sm px-2 before:border-t-2 top-2 bg-[#ed1b24]"
+                    ><em class="bookmarkRibbon"></em>Close</span
+                  >
+                </div>
+              </div>
+              <!-- Rating star -->
+              <div class="pl-3 pt-4 w-[50%]">
+                <a href="#">
+                  <h1 class="text-lg font-bold hover:text-red-600">
+                    Restaurant Demo
+                  </h1>
+                </a>
+                <span>Type of food: Apple Juice</span>
+              </div>
+            </div>
+          </li>
+          <li class="flex lg:w-[48%] w-full mt-5">
+            <div
+              class="relative flex bg-white w-full shadow-md items-center h-44 px-7 rounded-md"
+            >
+              <!-- Image -->
+              <div class="w-[20%]">
+                <div class="img-holder">
+                  <figure>
+                    <a href="#">
+                      <img
+                        src="/assets/images/Other Images/listing-logo18.png"
+                        width="100px"
+                        height="100px"
+                        class="img-list wp-post-image"
+                        alt=""
+                      />
+                    </a>
+                  </figure>
+                  <span
+                    class="restaurant-status close absolute -left-2 text-white flex text-sm px-2 before:border-t-2 top-2 bg-[#ed1b24]"
+                    ><em class="bookmarkRibbon"></em>Close</span
+                  >
+                </div>
+              </div>
+              <!-- Rating star -->
+              <div class="pl-3 pt-4 w-[50%]">
+                <a href="#">
+                  <h1 class="text-lg font-bold hover:text-red-600">
+                    Restaurant Demo
+                  </h1>
+                </a>
+                <span>Type of food: Apple Juice</span>
+              </div>
+            </div>
+          </li>
+          <li class="flex lg:w-[48%] w-full mt-5">
+            <div
+              class="relative flex bg-white w-full shadow-md items-center h-44 px-7 rounded-md"
+            >
+              <!-- Image -->
+              <div class="w-[20%]">
+                <div class="img-holder">
+                  <figure>
+                    <a href="#">
+                      <img
+                        src="/assets/images/Other Images/listing-logo18.png"
+                        width="100px"
+                        height="100px"
+                        class="img-list wp-post-image"
+                        alt=""
+                      />
+                    </a>
+                  </figure>
+                  <span
+                    class="restaurant-status close absolute -left-2 text-white flex text-sm px-2 before:border-t-2 top-2 bg-[#ed1b24]"
+                    ><em class="bookmarkRibbon"></em>Close</span
+                  >
+                </div>
+              </div>
+              <!-- Rating star -->
+              <div class="pl-3 pt-4 w-[50%]">
+                <a href="#">
+                  <h1 class="text-lg font-bold hover:text-red-600">
+                    Restaurant Demo
+                  </h1>
+                </a>
+                <span>Type of food: Apple Juice</span>
+              </div>
+            </div>
+          </li>
+        </ul>
       </div>
     </section>
     <!-- Footer -->

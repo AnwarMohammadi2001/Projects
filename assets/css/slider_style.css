@@ -47,7 +47,7 @@
   padding: 10px 0px;
   display: grid;
   grid-auto-flow: column;
-  grid-auto-columns: calc((100% / 5) - 12px);
+  grid-auto-columns: calc((100% / 4) - 13px);
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   gap: 10px;
@@ -79,8 +79,8 @@
 }
 .carousel .card {
   scroll-snap-align: start;
-  height: 260px;
-  width: 250px;
+  height: 240px;
+  width: 240px;
   list-style: none;
   background: #fff;
   cursor: pointer;
@@ -91,8 +91,8 @@
 }
 .card .img img {
   margin-top: 40px;
-  width: 180px;
-  height: 180px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   object-fit: cover;
   border: 1px dashed black;

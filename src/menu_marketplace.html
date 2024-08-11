@@ -253,22 +253,48 @@
             </div>
           </div>
         </div>
-        <div class="flex md:w-1/2 mt-10 items-center justify-center">
-          <div class="md:w-[50%] w-[50%]">
-            <select
-              id="day-select"
-              name="day"
-              class="mt-1 block w-full pl-3 pr-10 py-2 rounded-md shadow-md text-base border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
-            >
-              <option>Select day</option>
-              <option>Monday</option>
-              <option>Tuesday</option>
-              <option>Wednesday</option>
-              <option>Thursday</option>
-              <option>Friday</option>
-              <option>Saturday</option>
-              <option>Sunday</option>
-            </select>
+        <div class="relative w-72 inline-block text-center">
+          <div class="delivery-timing reviews-sortby">
+            <ul class="relative">
+              <li class="relative">
+                <a
+                  href="#"
+                  class="reviews-sortby-active flex items-center justify-between py-2 px-4 bg-gray-100"
+                >
+                  <span>Today :</span>
+
+                  <span> opening_hours </span>
+                  <span class="ms-2 w-2 [&>svg]:h-5 [&>svg]:w-5">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </span>
+                </a>
+                <ul
+                  class="delivery-dropdown bg-gray-100 absolute left-0 w-full z-10 hidden"
+                >
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center justify-between py-2 px-4"
+                    >
+                      <span class="opend-day">{{ hour }}</span>
+                      <span class="opend-time">
+                        <small>:</small>
+                      </span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
@@ -276,7 +302,7 @@
     <!-- main body -->
     <div class="md:flex gap-10">
       <!-- Aside dashboard  -->
-      <div class="md:w-[25%] md:ml-32 w-full mt-10 md:mb-40 h-fit">
+      <div class="md:w-[20%] md:ml-32 w-full mt-10 md:mb-40 h-fit">
         <div class="flex md:flex-row flex-col items-center">
           <ul class="w-full h-auto">
             <!-- dashboard -->
@@ -343,127 +369,17 @@
           Menu
         </div>
         <div class="w-full" style="background-color: #fff">
-          <div class="px-7">
-            <a href="#" class="underline text-red-500"
-              ><h1 class="pt-3 text-lg font-bold">Checken(Update)</h1></a
-            >
-            <span class="text-gray-400"
-              >Garlic bread also garlic toast consists of bread usually a
-              baguette or sour dough like a ciabatta
-            </span>
-          </div>
-          <ul class="mt-5 md:px-7 px-5">
+          <ul class="md:px-7 px-5">
+            <div class="pb-5">
+              <a href="#" class="underline text-red-500"
+                ><h1 class="pt-3 text-lg font-bold">Checken(Update)</h1></a
+              >
+              <span class="text-gray-400"
+                >Garlic bread also garlic toast consists of bread usually a
+                baguette or sour dough like a ciabatta
+              </span>
+            </div>
             <!-- items -->
-            <li class="flex mb-10 border-b pb-4">
-              <div class="">
-                <img
-                  class="w-[80px] h-[80px]"
-                  src="/assets/images/Other Images/fb-restaurant-02.jpg"
-                  alt=""
-                />
-              </div>
-              <div class="ml-5 md:w-[80%] w-[40%]">
-                <h2 class="font-bold text-lg tracking-wider">Our Best Food</h2>
-                <span class="text-gray-400">Categori</span>
-              </div>
-              <div class="flex items-center md:w-[20%] w-[30%] justify-between">
-                <div><p>$300.00</p></div>
-                <div>
-                  <i
-                    class="flex justify-center cursor-pointer text-red-500 border border-red-500 rounded-[50%] p-1 text-center"
-                    ><svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke-width="1.5"
-                      stroke="currentColor"
-                      class="size-4"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M5 12h14"
-                      />
-                    </svg>
-                  </i>
-                </div>
-                <div><p>0</p></div>
-                <div>
-                  <i
-                    class="flex justify-center cursor-pointer text-red-500 border border-red-500 rounded-[50%] p-1 text-center"
-                    ><svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke-width="1.5"
-                      stroke="currentColor"
-                      class="size-4"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M12 4.5v15m7.5-7.5h-15"
-                      />
-                    </svg>
-                  </i>
-                </div>
-              </div>
-            </li>
-            <li class="flex mb-10 border-b pb-4">
-              <div class="">
-                <img
-                  class="w-[80px] h-[80px]"
-                  src="/assets/images/Other Images/fb-restaurant-02.jpg"
-                  alt=""
-                />
-              </div>
-              <div class="ml-5 md:w-[80%] w-[40%]">
-                <h2 class="font-bold text-lg tracking-wider">Our Best Food</h2>
-                <span class="text-gray-400">Categori</span>
-              </div>
-              <div class="flex items-center md:w-[20%] w-[30%] justify-between">
-                <div><p>$300.00</p></div>
-                <div>
-                  <i
-                    class="flex justify-center cursor-pointer text-red-500 border border-red-500 rounded-[50%] p-1 text-center"
-                    ><svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke-width="1.5"
-                      stroke="currentColor"
-                      class="size-4"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M5 12h14"
-                      />
-                    </svg>
-                  </i>
-                </div>
-                <div><p>0</p></div>
-                <div>
-                  <i
-                    class="flex justify-center cursor-pointer text-red-500 border border-red-500 rounded-[50%] p-1 text-center"
-                    ><svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke-width="1.5"
-                      stroke="currentColor"
-                      class="size-4"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M12 4.5v15m7.5-7.5h-15"
-                      />
-                    </svg>
-                  </i>
-                </div>
-              </div>
-            </li>
             <li class="flex mb-10 border-b pb-4">
               <div class="">
                 <img
@@ -566,5 +482,6 @@
       </div>
     </footer>
     <script src="/assets/Js/marketplace.js"></script>
+    <script src="/assets/Js/responsive_codes.js"></script>
   </body>
 </html>

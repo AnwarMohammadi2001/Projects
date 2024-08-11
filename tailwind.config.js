@@ -13,7 +13,7 @@ module.exports = {
     extend: {},
     fontFamily: {
       poppins: ["Poppins", "sans-serif"],
-      vazir: ["vazirmatn"],
+      
     },
   },
   plugins: [],

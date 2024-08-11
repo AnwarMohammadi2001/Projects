@@ -17,7 +17,7 @@
 /* Restaurant dashboard */
 #restaurant_dashborad {
   background-image: url("/assets/images/res_dash.jpg");
-  border-radius: 20px;
+  height: 370px;
   width: 100%;
 
   background-size: cover;
